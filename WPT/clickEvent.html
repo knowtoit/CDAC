@@ -1,0 +1,33 @@
+<!---Write a jQuery program to attach a click and double-click events to all elements.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Click & Double Click Event</title>
+    <style>
+        #d1{
+            height: 50px;
+            width: 50px;
+            border: solid 1px;
+            background-color: brown;
+            /* background-color: */
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#d1").click(function(){
+                $("#d1").css("background-color", "cyan")
+            })
+            $("#d1").dblclick(function(){
+                $("#d1").css("background-color", "bisque")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="d1">
+    </div>
+</body>
+</html>
