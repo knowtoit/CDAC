@@ -1,0 +1,39 @@
+<!--Write a jQuery program to get a single element from a selection of elements of a
+HTML page.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Single Element Selection</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // $("#p1").text("hello")
+                $("#p2").toggle()
+                $("#p3").toggle()
+                $("#p4").toggle()
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, eum in ab culpa repellendus quasi temporibus reiciendis voluptatum architecto similique odit, illum nobis perferendis laudantium tempore eius aliquam molestiae adipisci?
+        </p>
+        <p id="p2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, eum in ab culpa repellendus quasi temporibus reiciendis voluptatum architecto similique odit, illum nobis perferendis laudantium tempore eius aliquam molestiae adipisci?
+        </p>
+        <p id="p3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, eum in ab culpa repellendus quasi temporibus reiciendis voluptatum architecto similique odit, illum nobis perferendis laudantium tempore eius aliquam molestiae adipisci?
+        </p>
+        <p id="p4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, eum in ab culpa repellendus quasi temporibus reiciendis voluptatum architecto similique odit, illum nobis perferendis laudantium tempore eius aliquam molestiae adipisci?
+        </p>
+        <button id="btn">Show</button>
+    </div>
+</body>
+</html>

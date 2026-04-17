@@ -1,0 +1,37 @@
+
+{
+    "matchDetails":{
+        "Team1": "India",
+        "Team2": "Australia",
+        "overs" : 20
+    },
+    "Scoreboard":{
+        "India" :{
+            "runs": 200,
+            "wickets": 4,
+            "overs" : 18
+        },
+        "Australia" :{
+            "runs": 150,
+            "wickets": 8,
+            "overs": 20
+        }
+    },
+    "Players":[
+       {
+        "Team" : "India",
+        "name" : "Virat Kohli",
+        "runs" : 78
+       },
+       {
+        "Team" : "India",
+        "name": "Rohit Sharma",
+        "runs" : 60
+       },
+       {
+        "Team" : "Australia",
+        "name": "David warner",
+        "runs" : 55
+       }
+    ]
+}

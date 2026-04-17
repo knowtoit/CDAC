@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Live Score Board</title>
+</head>
+<body>
+    <h2>Live Score</h2>
+    <table id="score">
+        <tr>
+            <th>Team</th>
+            <th>Score</th>
+        </tr>
+    </table>
+
+    <script>
+        function loadData(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/users", true);
+
+            xhr.onload = function (){
+                if(xhr.status == 200){
+                    var data = JSON.parse(xhr.responseText);
+
+                    var events = data;
+
+                    var table = document.getElementById("score");
+
+                    for(var i =0; i< events.length; i++){
+                        var row = table.insertRow();
+
+                        row.insertCell(0).innerHTML = data[i].id;
+                        row.insertCell(1).innerHTML = data[i].name;
+                    }
+                }
+            };
+            xhr.send();
+        }
+        loadData();
+    </script>
+</body>
+</html>

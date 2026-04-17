@@ -1,0 +1,58 @@
+<!-- Design and implement a web page that displays live news headlines. Use the Axios HTTP
+client to retrieve and interpret JSON data from a URL provided by the faculty. -->
+
+    
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Live News</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        #news{
+            width:80%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Live News</h2>
+    <div id="news"></div>
+
+    <script>
+        function loadNews(){
+            axios.get("https://api.spaceflightnewsapi.net/v4/articles/")
+            .then(function(response){
+                let article = response.data.results;
+                let output = "";
+
+                article.slice(0,10).forEach(function(news){
+                    output += `
+                    <div> 
+                        <h3>${news.title}</h3>
+                        <p>${news.summary}</p>
+                        <a href="${news.url}" target ="_blank" >Read more</a>
+                    <div>`;
+                });
+                document.getElementById("news").innerHTML = output;
+            })
+            .catch(function(error){
+                console.log(error)
+            });
+        }
+        loadNews();
+    </script>
+</body>
+</html>

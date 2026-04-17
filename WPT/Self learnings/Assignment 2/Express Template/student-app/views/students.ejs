@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student List</title>
+</head>
+<body>
+    <h2>Student List</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <%  students.forEach(function(student){%>
+        <tr>
+            <td><%= student.name %></td>
+            <td><%= student.course %></td>
+        </tr>
+        <% }) %>
+    </table>
+    <br>
+    <a href="/">Home</a>
+</body>
+</html>

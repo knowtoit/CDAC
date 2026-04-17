@@ -1,0 +1,35 @@
+<!--Write a jQuery program to hide all headings on a page when they are clicked. o Also
+find the position of the mouse pointer relative to the left and top edges of the
+document-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hiding headings & finding mouse position</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#d1").click(function () {
+                $("#d1").hide()
+            })
+            $(document).mousemove(function(event){
+                $("#p1").text(event.pageX + "," + event.pageY);
+            })
+        })
+       
+    </script>
+</head>
+
+<body>
+    <div id="d1">
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <h3>Hello</h3>
+    </div>
+    Mouse is at: <p id="p1"></p>
+</body>
+
+</html>
