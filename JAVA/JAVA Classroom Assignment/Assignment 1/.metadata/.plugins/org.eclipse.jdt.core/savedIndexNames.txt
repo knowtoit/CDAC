@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+E:\CDAC\JAVA\JAVA Classroom Assignment\Assignment 1\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2576278075.index
+1255279620.index
+2627657950.index

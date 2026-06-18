@@ -1,0 +1,42 @@
+package com.demo;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class StudentService {
+	static Student[] sarr;
+	static int count;
+	static {
+		sarr = new Student[100];
+		sarr[0] = new Student(12, "Aish" , 89,78,98, new Date());
+		sarr[1] = new Student(13, "Deepa", 88, 98, 67, new Date());
+		count = 2;
+	}
+	public static boolean addNewStudent() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter id");
+		int sid = sc.nextInt();
+		System.out.println("Enter name");
+		String nm = sc.next();
+		System.out.println("enter m1");
+		float m1=sc.nextFloat();
+		System.out.println("enter m2");
+		float m2=sc.nextFloat();
+		System.out.println("enter m3");
+		float m3=sc.nextFloat();
+		System.out.println("enter date (dd/MM/yyyy)");
+		String dt=sc.next();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		Date jdt = null;
+		try {
+			jdt = sdf.parse(dt);
+		}catch(ParseException e) {
+			System.out.println("pls enter date in proper format");
+		}
+		return false;
+	}
+	
+	
+}

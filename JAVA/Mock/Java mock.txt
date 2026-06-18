@@ -1,0 +1,979 @@
+
+Core Java Mock 2 FEB 2026
+Total points
+38/74
+ 
+The respondent's email (saichaudharid@gmail.com) was recorded on submission of this form.
+ 
+ Which of the following Java 8 interface features allows defining methods with a body inside interfaces?
+*
+0/1
+A) Abstract methods
+B) Default methods
+C) Static methods
+ 
+D) Private methods
+Correct answer
+B) Default methods
+ 
+What is the purpose of static imports in Java?
+*
+1/1
+A) Static imports allow you to import static variables and methods from other classes, enabling you to access them without qualifying with the class name.
+ 
+B) Static imports allow you to import static classes only.
+C) Static imports enable access to constructors from other classes.
+D) Static imports are used for importing non-static members of a class.
+ 
+Which of the following statements about TreeSet is correct?
+*
+0/1
+a) TreeSet allows duplicate elements, but sorts them in ascending order.
+b) TreeSet uses a Comparator to sort elements by default.
+ 
+c) TreeSet is based on a red-black tree, which ensures elements are stored in sorted order.
+d) TreeSet can store null elements, but only one.
+Correct answer
+c) TreeSet is based on a red-black tree, which ensures elements are stored in sorted order.
+ 
+In Java NIO, which of the following is the correct use of the Selector class?
+*
+0/1
+A) It is used for direct file manipulation.
+B) It allows non-blocking I/O operations on channels.
+C) It handles character encoding/decoding during input and output.
+ 
+D) It is used to map data from the disk into memory.
+Correct answer
+B) It allows non-blocking I/O operations on channels.
+ 
+ What will be the output of the following code involving StringBuffer? StringBuffer sb = new StringBuffer("Java");sb.append(" Programming");String str = sb.toString();System.out.println(str);
+*
+1/1
+A) Java
+B) Java Programming
+ 
+C) Programming Java
+D) Compilation error
+ 
+ Which of the following statements is true about the Calendar class in Java?
+*
+1/1
+A) The Calendar class is immutable and cannot be modified.
+B) Calendar is a concrete class and cannot be subclassed.
+C) Calendar is an abstract class and must be subclassed before use.
+ 
+D) Calendar objects are thread-safe without needing synchronization.
+ 
+Which of the following is a characteristic feature of Hashtable?
+*
+1/1
+a) Hashtable is synchronized and thread-safe, but does not allow null values.
+ 
+b) Hashtable is thread-unsafe and allows duplicate keys.
+c) Hashtable allows null keys and values.
+d) Hashtable does not allow duplicate values, but allows duplicate keys
+ 
+ Which of the following is the key difference between abstraction and encapsulation in Object-Oriented Programming (OOP)?
+*
+0/1
+A) Abstraction hides the internal workings of an object, while encapsulation hides the behavior.
+ 
+B) Abstraction is achieved through access modifiers, while encapsulation is achieved through methods and properties.
+C) Encapsulation hides the internal state of an object, while abstraction hides the complexity of the system.
+D) There is no difference; both terms are synonymous in OOP
+Correct answer
+C) Encapsulation hides the internal state of an object, while abstraction hides the complexity of the system.
+ 
+In the Producer-Consumer problem, which of the following statements is true regarding the role of wait(), notify(), and notifyAll()?
+*
+0/1
+a) wait() is used to pause the producer when the buffer is full, and notify() is used to notify the consumer.
+ 
+b) notify() is used to pause the consumer when the buffer is empty, and notifyAll() is used to notify all producers.
+c) notifyAll() is used when a producer adds an item, and wait() is used to pause the consumer when there are no items.
+d) notify() is used to pause the producer when the buffer is full, and wait() is used to notify the consumer.
+Correct answer
+c) notifyAll() is used when a producer adds an item, and wait() is used to pause the consumer when there are no items.
+ 
+ In Java, where are primitive types and objects stored in memory?
+*
+0/1
+A) Primitive types are stored in heap memory, while objects are stored in stack memory.
+ 
+B) Both primitive types and objects are stored in the stack memory.
+C) Primitive types are stored in stack memory, while objects are stored in heap memory.
+D) Both primitive types and objects are stored in the heap memory.
+Correct answer
+C) Primitive types are stored in stack memory, while objects are stored in heap memory.
+ 
+ Which of the following is NOT a valid Java token?
+*
+0/1
+A) class
+B) @Override
+C) main
+D) ++
+ 
+Correct answer
+C) main
+ 
+Which of the following conditions is not required for a deadlock to occur in a system?
+*
+0/1
+a) Mutual exclusion
+b) Hold and wait
+ 
+c) No preemption
+d) Limited number of threads
+Correct answer
+d) Limited number of threads
+ 
+ Which of the following statements is incorrect about try-catch-finally blocks in Java?
+*
+1/1
+A) The finally block is executed even if an exception is not thrown.
+B) The finally block is executed only if the exception is caught.
+ 
+C) The finally block is executed whether or not an exception occurs, except in cases where the JVM crashes or the program exits.
+D) A finally block can be skipped if the JVM exits during the execution of the try or catch block (e.g., via System.exit()).
+Quilgo Test ID
+*
+This question is filled automatically ✋ DO NOT EDIT OR REMOVE
+260245920006
+ 
+ Which of the following is a correct definition of a functional interface in Java?
+*
+1/1
+A) An interface that has only one abstract method and multiple default methods.
+ 
+B) An interface that has only one abstract method and no default methods.
+C) An interface that can have multiple abstract methods but only one default method.
+D) An interface that does not have any methods.
+ 
+ Which of the following is the correct way to handle multi-catch in Java?
+*
+1/1
+A) Use multiple catch blocks for each exception type.
+B) Use a single catch block with multiple exceptions, separated by commas.
+ 
+C) Use catch (Exception | Throwable ex) to catch all types of exceptions.
+D) Use catch with | inside a try-catch block, and each exception should be an instance of Throwable
+ 
+ Which of the following is the correct way to achieve composition in Java?
+*
+1/1
+A) A class has references to objects of other classes, but the lifetime of the referenced objects is independent of the owning class.
+B) A class has references to objects of other classes, and the lifetime of the referenced objects is controlled by the owning class.
+ 
+C) A class inherits from multiple classes.
+D) A class can have multiple objects of another class but with no strong relationship.
+ 
+ Given the following code snippet, what is the result of the program?
+interface A {
+
+    void methodA();
+
+}
+
+ 
+
+interface B {
+
+    void methodB();
+
+}
+
+ 
+
+class C implements A, B {
+
+    public void methodA() {
+
+        System.out.println("Method A");
+
+    }
+
+   
+
+    public void methodB() {
+
+        System.out.println("Method B");
+
+    }
+
+}
+
+ 
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        C obj = new C();
+
+        obj.methodA();
+
+        obj.methodB();
+
+    }
+
+}
+*
+0/1
+A) Compilation Error
+ 
+B) Method A
+C) Method A followed by Method B
+D) Runtime Error
+Correct answer
+C) Method A followed by Method B
+ 
+ Which of the following methods is not directly inherited from the Object class but is instead defined in java.util classes?
+*
+0/1
+A) clone()
+B) toString()
+ 
+C) equals()
+D) hashCode()
+Correct answer
+A) clone()
+ 
+What will happen when you add a string literal and a new string created using the new keyword in the context of the String pool?
+
+String str1 = "Hello";
+
+String str2 = new String("Hello");
+
+System.out.println(str1 == str2);
+
+*
+0/1
+A) true
+ 
+B) false
+C) Compilation error
+D) Runtime exception
+Correct answer
+B) false
+ 
+ What is the behavior of the finalize() method in Java when the JVM decides to run garbage collection?
+*
+1/1
+A) The finalize() method is always called before the object is garbage collected.
+B) The finalize() method may or may not be called by the garbage collector before the object is reclaimed.
+ 
+C) The finalize() method is called when the object becomes eligible for garbage collection.
+D) The finalize() method is invoked by the developer manually before garbage collection.
+ 
+ Which of the following is true about the Java Virtual Machine (JVM) and its platform independence?
+*
+0/1
+A) The JVM is platform-independent; Java bytecode is compiled to machine code specific to each platform.
+ 
+B) The JVM must be re-written for each platform, but once written, it allows Java bytecode to be executed on all systems.
+C) Java programs are compiled directly into platform-specific binaries.
+D) Java bytecode is platform-specific, and JVM makes the code independent of the hardware architecture.
+Correct answer
+B) The JVM must be re-written for each platform, but once written, it allows Java bytecode to be executed on all systems.
+ 
+ Which of the following statements is TRUE about Java's memory management?
+
+*
+1/1
+A) Java uses manual memory management and developers are responsible for memory allocation and deallocation.
+B) Java’s memory management is entirely handled by the JVM’s garbage collector.
+ 
+C) The JVM allocates memory for objects but does not handle garbage collection.
+D) Java allows direct memory manipulation using unsafe methods.
+ 
+ What happens if an object is serialized without implementing the Serializable interface?
+*
+1/1
+A) A CloneNotSupportedException is thrown.
+B) A NotSerializableException is thrown.
+ 
+C) The object is ignored during serialization.
+D) The object is serialized as a default object.
+ 
+Which of the following statements about ArrayList is true?
+*
+1/1
+a) ArrayList is synchronized by default.
+b) ArrayList allows duplicate elements.
+ 
+c) ArrayList implements Queue interface.
+d) ArrayList allows null elements, but only one at a time.
+ 
+ What is the result of the following code, and why? class A {    public void method() throws Exception {        throw new Exception("Exception from A");    }} class B extends A {    public void method() throws RuntimeException {        throw new RuntimeException("Exception from B");    }} public class Test {    public static void main(String[] args) {        A obj = new B();        try {            obj.method();        } catch (Exception e) {            System.out.println("Caught Exception: " + e.getMessage());        }    }}
+A) Caught Exception: Exception from A
+B) Caught Exception: Exception from B
+C) Compilation error
+D) Runtime exception not caught45. What is the result of the following code, and why? class A {    public void method() throws Exception {        throw new Exception("Exception from A");    }} class B extends A {    public void method() throws RuntimeException {        throw new RuntimeException("Exception from B");    }} public class Test {    public static void main(String[] args) {        A obj = new B();        try {            obj.method();        } catch (Exception e) {            System.out.println("Caught Exception: " + e.getMessage());        }    }}
+
+*
+1/1
+A) Caught Exception: Exception from A
+ 
+B) Caught Exception: Exception from B
+C) Compilation error
+D) Runtime exception not caught
+ 
+ What will be the result of the following code
+
+int a = 5, b = 3;
+
+if (a > b)
+
+{
+
+if (b > 2)
+
+{
+
+ System.out.println("True");
+
+ }
+
+}
+
+*
+1/1
+A) True
+ 
+B) No output
+C) Compilation Error
+D) Runtime Exception
+ 
+ Which of the following classes in Java can be used for non-blocking I/O operations (NIO)?
+*
+0/1
+A) BufferedReader
+B) FileInputStream
+ 
+C) Selector
+D) PrintWriter
+Correct answer
+C) Selector
+ 
+ Consider the following Java code snippet. What will be the output when it is executed?
+class Person {
+
+    String name;
+
+   
+
+    Person(String name) {
+
+        this.name = name;
+
+    }
+
+}
+
+ 
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Person p1 = new Person("Alice");
+
+        Person p2 = p1;
+
+        p2.name = "Bob";
+
+        System.out.println(p1.name);
+
+    }
+
+}
+
+*
+0/1
+A) Alice
+ 
+B) Bob
+C) Compilation Error
+D) null
+Correct answer
+B) Bob
+ 
+ What will be the output of the following lambda expression code?
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Runnable r = () -> System.out.println("Lambda Expression in Java!");
+
+        r.run();
+
+    }
+
+}
+
+*
+0/1
+A) Compilation error
+B) Lambda Expression in Java
+C) run() method not defined
+ 
+D) Runnable.run() method executed
+Correct answer
+B) Lambda Expression in Java
+ 
+ Which of the following is the correct way to create a user-defined checked exception in Java?
+*
+1/1
+A) class MyCheckedException extends RuntimeException {}
+B) class MyCheckedException extends Exception {}
+ 
+C) class MyUncheckedException extends Throwable {}
+D) class MyCheckedException extends Error {}
+ 
+ What is the output of the following Java program?
+
+int[][] matrix = {{1, 2}, {3, 4}, {5, 6}};
+
+System.out.println(matrix[1][1]);
+
+*
+1/1
+A) 3
+B) 4
+ 
+C) 5
+D) 6
+ 
+ Which of the following is true about constructors in OOP?
+*
+0/1
+A) Constructors can have return types like methods.
+B) Constructors are invoked explicitly using the new keyword.
+ 
+C) Constructors are called only once during the lifetime of an object.
+D) A subclass can invoke the constructor of its superclass using the super() keyword.
+Correct answer
+D) A subclass can invoke the constructor of its superclass using the super() keyword.
+ 
+What happens when Thread.yield() is called?
+*
+0/1
+a) It terminates the current thread.
+b) It pauses the current thread and allows other threads of the same priority to run.
+c) It suspends the current thread indefinitely.
+d) It causes the thread to sleep for a specified time
+ 
+Correct answer
+b) It pauses the current thread and allows other threads of the same priority to run.
+ 
+What will be the output of the following code snippet? import java.util.*; public class Main {    public static void main(String[] args) {        List<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30, 40));        list.add(1, 25); // Insert 25 at index 1        System.out.println(list.get(1)); // What will be printed?    }}
+*
+0/1
+a) 25
+b) 20
+c) 30
+d) Compilation error
+ 
+Correct answer
+a) 25
+ 
+ Which of the following statements about inheritance in Java is FALSE?
+
+
+*
+0/1
+A) A class can inherit from multiple classes in Java (Multiple Inheritance).
+B) A subclass inherits both instance variables and methods from its superclass.
+C) A subclass can override methods of the superclass to provide its own implementation.
+ 
+D) A subclass can access the public and protected members of its superclass.
+Correct answer
+A) A class can inherit from multiple classes in Java (Multiple Inheritance).
+ 
+What is the main difference between the Thread class and the Runnable interface?
+*
+0/1
+a) Thread is used to create threads, while Runnable is used to define the task for the thread.
+b) Runnable is a class that provides a mechanism for thread management, while Thread is an interface.
+c) Thread can be implemented by a class, while Runnable can only be extended by a class.
+ 
+d) Thread is used for non-blocking threads, while Runnable is used for blocking threads.
+Correct answer
+a) Thread is used to create threads, while Runnable is used to define the task for the thread.
+ 
+ Which of the following statements is true regarding garbage collection in Java?
+*
+0/1
+A) Java automatically runs garbage collection at fixed intervals.
+ 
+B) The garbage collector runs only when the System.gc() method is explicitly called.
+C) Objects that are unreachable or no longer referenced are eligible for garbage collection.
+D) The garbage collector cannot reclaim memory from objects that were created using new keyword.
+Correct answer
+C) Objects that are unreachable or no longer referenced are eligible for garbage collection.
+ 
+Which method is used to assign the priority of a thread in Java?
+*
+1/1
+a) setPriority()
+ 
+b) setThreadPriority()
+c) getPriority()
+d) assignPriority()
+ 
+ Which of the following is true about constructor chaining in Java?
+*
+1/1
+A) Constructor chaining can only occur within the same class.
+B) Constructor chaining can happen between different classes, even if they are in different packages.
+C) Constructor chaining is done using the super() keyword when invoking a constructor from a subclass.
+ 
+D) Constructor chaining is not possible in Java.
+ 
+ Given the following code, what concept is demonstrated by the Vehicle class, which contains the speed() method, and the Car class that overrides it?
+
+class Vehicle {
+
+    void speed() {
+
+        System.out.println("Vehicle is moving");
+
+    }
+
+}
+
+ 
+
+class Car extends Vehicle {
+
+    @Override
+
+    void speed() {
+
+        System.out.println("Car is moving faster");
+
+    }
+
+}
+
+ 
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Vehicle v = new Car();
+
+        v.speed();
+
+    }
+
+}
+
+*
+0/1
+A) Encapsulation
+B) Inheritance
+ 
+C) Polymorphism
+D) Abstraction
+Correct answer
+C) Polymorphism
+ 
+ What is the key difference between HashMap and TreeMap in Java?
+*
+1/1
+a) HashMap maintains the order of keys, while TreeMap does not.
+b) HashMap uses a hash table for storage, while TreeMap uses a red-black tree to store keys in sorted order.
+ 
+c) HashMap allows null keys, while TreeMap does not allow null keys.
+d) HashMap can store only String keys, while TreeMap can store keys of any type.
+ 
+ What is the purpose of the throw keyword in Java?
+*
+0/1
+A) It is used to propagate exceptions up the call stack.
+B) It is used to explicitly throw exceptions within a method.
+C) It is used to declare that a method may throw an exception.
+D) It is used to handle an exception after it has been caught.
+ 
+Correct answer
+B) It is used to explicitly throw exceptions within a method.
+ 
+ What is the output of the following Java code, considering inheritance and method overriding?
+
+class Animal {
+
+    void sound() {
+
+        System.out.println("Animal sound");
+
+    }
+
+}
+
+ 
+
+class Dog extends Animal {
+
+    @Override
+
+    void sound() {
+
+        System.out.println("Bark");
+
+    }
+
+}
+
+ 
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Animal obj = new Dog();
+
+        obj.sound();
+
+    }
+
+}
+
+*
+1/1
+A) Animal sound
+B) Bark
+ 
+C) Compilation error
+D) Runtime error
+ 
+Which of the following statements is true about the String pool in Java?
+*
+1/1
+A) The String pool is a separate area of memory used only for strings declared as new String().
+B) Strings in the String pool are automatically garbage collected once they are no longer referenced.
+C) String literals are stored in the String pool to save memory and ensure efficient string reuse.
+ 
+D) The String pool is located in the heap memory, not in the method area.
+ 
+ Which of the following is true about Java's primitive data types in terms of memory allocation?
+*
+1/1
+A) All primitive data types in Java are allocated memory on the heap.
+B) Memory allocation for primitive data types depends on the JVM’s implementation and may vary across platforms.
+C) Primitive data types are stored on the stack, while objects are stored in the heap.
+ 
+D) All primitive data types in Java are of fixed size, and the JVM does not allow changes to their memory layout.
+ 
+What is the result of the following code snippet?
+
+int a = 10;
+
+float b = 20.5f;
+
+ a = a + b;
+
+*
+1/1
+A) Compilation Error: incompatible types
+ 
+B) a = 30.5
+C) a = 30
+D) Runtime Error
+ 
+ Which of the following is a correct way to make an object eligible for garbage collection in Java?
+*
+1/1
+A) Setting a reference variable to null
+B) Reassigning a reference variable to another object
+C) Creating an "island of isolation" by making an object inaccessible from any reachable reference
+D) All of the above
+ 
+ 
+Which of the following statements is true regarding garbage collection in Java?
+*
+0/1
+A) Java automatically runs garbage collection at fixed intervals.
+ 
+B) The garbage collector runs only when the System.gc() method is explicitly called.
+C) Objects that are unreachable or no longer referenced are eligible for garbage collection.
+D) The garbage collector cannot reclaim memory from objects that were created using new keyword.
+Correct answer
+C) Objects that are unreachable or no longer referenced are eligible for garbage collection.
+ 
+ Which of the following correctly describes the constructor behavior in the context of initializing reference variables in Java?
+*
+1/1
+A) Constructors are only used to initialize primitive data types.
+B) Constructors can be used to initialize reference variables, and you can use the new keyword to assign objects to them.
+ 
+C) Constructors cannot initialize reference variables, as they must always be initialized later in the program.
+D) Constructors automatically reassign all reference variables to their default values.
+ 
+ Which of the following is true about inner classes in Java?
+*
+1/1
+A) A regular inner class can access both instance and static members of the enclosing class.
+ 
+B) A method-local inner class can access only static members of the enclosing class.
+C) Anonymous inner classes do not have a name and can access instance variables directly from the enclosing class.
+D) A static inner class can access instance variables of the enclosing class without any restrictions.
+ 
+Which of the following statements is true about HashSet?
+*
+0/1
+a) HashSet allows duplicate elements and maintains insertion order.
+b) HashSet does not allow null elements.
+c) HashSet is not thread-safe and does not guarantee any order of elements.
+d) HashSet maintains a sorted order of elements
+ 
+Correct answer
+c) HashSet is not thread-safe and does not guarantee any order of elements.
+NAME
+*
+Aishwarya Chaudhari
+ 
+ Which of the following methods can be used to explicitly request the JVM to run garbage collection in Java?
+*
+0/1
+A) System.gc()
+ 
+B) Runtime.getRuntime().gc()
+C) System.runFinalization()
+D) All of the above
+Correct answer
+D) All of the above
+ 
+ Which of the following statements is true about enums in Java?
+*
+1/1
+A) An enum can inherit from another class.
+B) Enums can implement interfaces but cannot extend other classes.
+ 
+C) Enum constants are always static and final.
+D) Enums cannot have constructors or methods.
+ 
+What is the purpose of the Comparable interface in Java?
+*
+1/1
+a) It allows you to compare objects of different classes.
+b) It enables you to define a custom sorting order for objects of a class.
+ 
+c) It provides methods to perform basic operations on collections.
+d) It allows objects to be added to a Set collection.
+PRN
+*
+260245920006
+ 
+ What will happen if we try to access a protected variable or method outside the package but within a subclass?
+*
+1/1
+A) It will result in a compilation error, even if the subclass is in a different package.
+B) It will result in a compilation error, unless the protected member is accessed within the same package.
+C) The protected variable or method can be accessed in the subclass, even if it is in a different package.
+ 
+D) The protected member will be inherited, but access will be denied in subclasses.
+ 
+ When compiling a Java program, which of the following best describes the relationship between the Java source code and the Java bytecode?
+*
+1/1
+A) Java source code is compiled into machine code by the Java compiler and executed directly by the OS.
+B) The Java compiler translates the Java source code into Java bytecode, which is then executed by the JVM.
+ 
+C) Java source code is compiled into an intermediate code that is executed directly by the CPU.
+D) Java source code is compiled into an executable, which does not require the JVM to run.
+ 
+Which of the following best describes the process of serialization in Java?
+*
+1/1
+A) Converting an object into a byte stream for storage or transmission
+ 
+B) Creating a shallow copy of an object
+C) Creating a deep copy of an object
+D) Transforming byte data into a human-readable format
+ 
+ In the JVM architecture, which of the following components is responsible for loading class files into memory?
+*
+0/1
+A) Class Loader
+B) Execution Engine
+C) Garbage Collector
+D) Just-In-Time Compiler (JIT)
+ 
+Correct answer
+A) Class Loader
+ 
+ Which of the following is true about downcasting in Java?
+*
+1/1
+A) Downcasting is always safe and does not require an explicit check.
+B) Downcasting is the act of casting a superclass reference to a subclass reference.
+ 
+C) Downcasting is allowed without any restrictions.
+D) Downcasting cannot be performed in Java.
+ 
+Which of the following is NOT allowed in Java interfaces?
+*
+0/1
+A) A class can implement multiple interfaces.
+B) An interface can extend another interface.
+ 
+C) An interface can contain concrete methods (methods with a body).
+D) An interface can contain default methods (methods with a body and a default implementation)
+Correct answer
+C) An interface can contain concrete methods (methods with a body).
+ 
+ Which of the following operators has the highest precedence in Java?
+*
+0/1
+A) && (Logical AND)
+ 
+B) ++ (Increment)
+C) = (Assignment)
+D) == (Equality)
+Correct answer
+B) ++ (Increment)
+ 
+Consider the following code snippet:  import java.util.*; public class Test {    public static void main(String[] args) {        List<String> list = new LinkedList<>();        list.add("a");        list.add("b");        list.add("c");        list.remove("b");        System.out.println(list);    }}
+What will be the output?
+
+*
+1/1
+a) [a, c]
+ 
+b) [b, c]
+c) [a, b, c]
+d) [a]
+ 
+ What is the primary difference between StringBuilder and StringBuffer in Java?
+*
+1/1
+A) StringBuilder is synchronized, while StringBuffer is not.
+B) StringBuffer is synchronized, while StringBuilder is not.
+ 
+C) StringBuilder and StringBuffer are identical in functionality and performance.
+D) StringBuilder can only be used for string concatenation, while StringBuffer can be used for general-purpose string manipulation.
+ 
+What is the primary advantage of using Generics in Java?
+*
+0/1
+a) It allows dynamic binding of types at runtime.
+ 
+b) It enables the use of primitive types in collections.
+c) It helps ensure type safety by providing compile-time type checking.
+d) It eliminates the need for reflection in Java programs.
+Correct answer
+c) It helps ensure type safety by providing compile-time type checking.
+ 
+ Which of the following methods can be used to convert a String to its corresponding primitive type using a wrapper class?
+*
+0/1
+A) parse()
+ 
+B) valueOf()
+C) toPrimitive()
+D) parseInt() for Integer, parseDouble() for Double, etc.
+Correct answer
+D) parseInt() for Integer, parseDouble() for Double, etc.
+ 
+Which of the following statements is true about the Vector class?
+*
+0/1
+a) Vector is not synchronized.
+b) Vector automatically doubles its size when it runs out of space.
+c) Vector has a fixed size once initialized.
+ 
+d) Vector doesn't allow dynamic resizing of elements.
+Correct answer
+a) Vector is not synchronized.
+ 
+ Which of the following interfaces is part of the Java I/O system and provides functionality for handling characters rather than raw byte data?
+*
+0/1
+A) InputStream
+B) OutputStream
+ 
+C) Reader
+D) Writer
+Correct answer
+C) Reader
+ 
+. Consider the following code: import java.util.*; public class Main {    public static void main(String[] args) {        Map<Integer, String> map = new LinkedHashMap<>();        map.put(3, "Three");        map.put(1, "One");        map.put(2, "Two");        map.put(4, "Four");         System.out.println(map);    }}
+What will be the output?
+
+*
+1/1
+a) {1=One, 2=Two, 3=Three, 4=Four}
+b) {3=Three, 1=One, 2=Two, 4=Four}
+ 
+c) {1=One, 3=Three, 2=Two, 4=Four}
+d) {4=Four, 3=Three, 2=Two, 1=One}
+ 
+ Which of the following statements about passing variables to methods is TRUE?
+*
+0/1
+A) In Java, all arguments are passed by reference, meaning any changes made to the parameter will reflect in the original variable.
+B) In Java, primitive data types are passed by reference, while objects are passed by value.
+C) In Java, primitive types are passed by value, while objects are passed by reference.
+D) In Java, objects and primitive types are both passed by reference.
+ 
+Correct answer
+C) In Java, primitive types are passed by value, while objects are passed by reference.
+ 
+ Which of the following statements is correct about the use of the final keyword in Java?
+*
+0/1
+A) A final method can be overridden in a subclass.
+B) A final class cannot have any subclasses.
+C) A final variable can be reassigned after initialization.
+ 
+D) A final class can have a constructor.
+Correct answer
+B) A final class cannot have any subclasses.
+ 
+ What is the purpose of wrapper classes in Java?
+*
+0/1
+A) To convert primitive data types to objects and vice versa.
+B) To perform arithmetic operations on primitive types.
+C) To improve memory efficiency for primitive types.
+ 
+D) To enable primitive types to be garbage collected
+Correct answer
+A) To convert primitive data types to objects and vice versa.
+ 
+ Consider the following code snippet. What will be the output when it is executed? class Person {    String name;    int age;     Person(String name, int age) {        this.name = name;        this.age = age;    }     @Override    public String toString() {        return "Person [name=" + name + ", age=" + age + "]";    }     @Override    public boolean equals(Object obj) {        if (this == obj) return true;        if (obj == null || getClass() != obj.getClass()) return false;        Person person = (Person) obj;        return age == person.age && name.equals(person.name);    }     @Override    public int hashCode() {        return Objects.hash(name, age);    }} public class Test {    public static void main(String[] args) {        Person person1 = new Person("Alice", 25);        Person person2 = new Person("Alice", 25);         System.out.println(person1.toString());        System.out.println(person1.equals(person2));        System.out.println(person1.hashCode() == person2.hashCode());    }}
+*
+1/1
+Person [name=Alice, age=25]truetrue
+ 
+Person [name=Alice, age=25]falsefalse
+Person [name=Alice, age=25]truefalse
+Person [name=Alice, age=25]falsetrue
+ 
+ Which of the following interfaces must a class implement in order to support Java serialization?
+
+*
+1/1
+A) Cloneable
+B) Serializable
+ 
+C) Externalizable
+D) Runnable
+ 
+Which of the following best describes the difference between shallow copy and deep copy in Java?
+*
+1/1
+A) A shallow copy creates a new object with the same reference as the original, while a deep copy creates a completely independent copy of the original object and its fields.
+ 
+B) A shallow copy copies only primitive data types, while a deep copy copies objects only.
+C) A shallow copy copies fields by reference, while a deep copy only copies immutable fields.
+D) A shallow copy is used for cloning objects, while a deep copy is used to serialize objects.
+This content is neither created nor endorsed by Google. - Contact form owner - Terms of Service - Privacy Policy
+Does this form look suspicious? Report
+
+Google Forms

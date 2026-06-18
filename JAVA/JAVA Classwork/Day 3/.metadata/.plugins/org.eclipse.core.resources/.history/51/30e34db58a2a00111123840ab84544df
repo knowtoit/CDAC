@@ -1,0 +1,49 @@
+package com.demo;
+
+import java.util.Scanner;
+
+public class ArrayService {
+	
+	public static void acceptData(int[] arr) {
+//		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.println("Enter Number" + i);
+			arr[i] = sc.nextInt();
+		}
+	}
+	
+	public static void displayData(int[] a) {
+		
+		
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);
+		}
+	}
+	
+	
+	public static int[] findDigitSums(int[] b) {
+		int[] arr = new int[b.length];
+		for(int i=0; i< b.length; i++) {
+			arr[i] = getDigitAddition(b[i]);
+		}
+		
+		return arr;
+	}
+	
+	
+	public static int getDigitAddition(int num) {
+		int sum = 0;
+		while(num > 0) {
+			int d = num % 10;
+			num = num/10;
+			sum += d;
+		}
+		return sum;
+	}
+	
+	
+	
+}
+

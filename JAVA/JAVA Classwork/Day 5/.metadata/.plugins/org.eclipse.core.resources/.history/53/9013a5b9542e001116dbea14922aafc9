@@ -1,0 +1,50 @@
+package com.demo;
+import java.util.*;
+
+public class TestStudentManagement {
+	public static void main(String[] args) {
+		int choice = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		do {
+			System.out.println("1. Add new student\\n2. Delete by id\\n"
+					+ "3.update by id\\n4.display all");
+			System.out.println("5. display by id\\n6. display by name\\n"
+					+ "7. exit\\nchoice:");
+			
+			choice = sc.nextInt();
+			switch(choice) {
+			case 1->{
+				boolean status = StudentService.addNewStudent();
+				if(status) {
+					System.out.print("Student added successfully");
+				}
+				else {
+					System.out.print("Student not added");
+				}
+			}
+			case 2->{
+				
+			}
+			case 3->{
+				
+			}
+			case 4->{
+				
+			}
+			case 5->{
+	
+			}
+			case 6->{
+	
+			}
+			case 7->{
+	
+			}
+			default ->{
+				System.out.println("Wrong choice!");
+			}
+			}
+		}while(choice !=7);
+	}
+}

@@ -1,0 +1,54 @@
+package com.demo;
+
+import java.util.Scanner;
+
+public class ArrayVariableService {
+
+	public static void acceptData(int[][] arr2) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<arr2.length; i++) {
+			System.out.println("Enter no of columns");
+			int col = sc.nextInt();
+			arr2[i] = new int[col];
+			for(int j =0; j<arr2[i].length; j++) {
+				arr2[i][j] = sc.nextInt();
+			}
+		}
+		
+	}
+
+	public static void displayData(int[][] arr2) {
+		// TODO Auto-generated method stub
+		for(int i =0;i < arr2.length; i++) {
+			for(int j=0; j<arr2[i].length; j++) {
+				System.out.print(arr2[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+
+	public static int[] findMinRowWise(int[][] arr) {
+		// TODO Auto-generated method stub
+		int [] minval = new int[arr.length];
+		for(int i=0; i<arr.length; i++) {
+			minval[i] = arr[i][0];
+			for(int j=0; j<arr[i].length; j++) {
+				if(minval[i] > arr[i][j]) {
+					minval[i] = arr[i][j];
+				}
+			}
+		}
+		return minval;
+	}
+
+	public static int[] findMinColumnWise(int[][] arr2) {
+		// TODO Auto-generated method stub
+		
+		return null;
+	}
+	
+
+}

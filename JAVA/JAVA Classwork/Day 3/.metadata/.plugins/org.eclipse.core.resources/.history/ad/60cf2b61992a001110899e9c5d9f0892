@@ -1,0 +1,66 @@
+package com.demo;
+import java.util.Scanner;
+
+public class Test2DArray {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int [][] arr = new int[3][3];
+		
+		Array2DService.acceptData(arr);
+		Array2DService.displayData(arr);
+		
+		int choice = 0;
+		do {
+			System.out.println("1. find max \\n 2. find min\\n 3. "
+					+ "find sum \\n 4. find sum rowwise \\n 5.find "
+					+ "sum columnswise\\n");
+			
+			System.out.println("6. display \\n 7. find rowwise maximum\\n"
+					+ " 8. find columnwise maximum\\n 9. exit"
+					+ " \\n choice:");
+			
+			choice = sc.nextInt();
+			
+			switch(choice) {
+			case 1->{
+				int max = Array2DService.findMax(arr);
+				System.out.print("Maximum: " + max);
+			}
+			case 2->{
+				
+			}
+			case 3->{
+				
+			}
+			
+			case 4->{
+				
+			}
+			case 5->{
+				
+			}
+			
+			case 6->{
+				
+			}
+			case 7->{
+				
+			}
+			case 8 ->{
+				
+			}
+			case 9->{
+				
+			}
+			
+			default->{
+				System.out.println("Wrong choice");
+			}
+			
+			}
+		}
+		while(choice !=9);
+		
+		sc.close();
+	}
+}

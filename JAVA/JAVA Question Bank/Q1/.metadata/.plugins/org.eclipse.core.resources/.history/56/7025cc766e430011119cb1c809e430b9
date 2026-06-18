@@ -1,0 +1,33 @@
+package com.demo.service;
+
+import com.demo.dao.VehicleDao;
+import com.demo.dao.VehicleDaoImpl;
+
+public class VehicleServiceImpl implements VehicleService {
+	private VehicleDao vdao;
+	
+	
+
+	public VehicleServiceImpl() {
+		super();
+		this.vdao = new VehicleDaoImpl();
+	}
+
+	
+
+
+	public VehicleServiceImpl(VehicleDao vdao) {
+		super();
+		this.vdao = vdao;
+	}
+
+
+
+
+	@Override
+	public boolean addNewVehicle() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

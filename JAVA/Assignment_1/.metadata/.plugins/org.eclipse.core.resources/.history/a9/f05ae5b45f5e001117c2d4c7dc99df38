@@ -1,0 +1,47 @@
+package com.demo.model;
+
+public class Student implements StudentInfo {
+    private int studentId;
+    private String name;
+    private int m1;
+    private int m2;
+    private int m3;
+    private double gpa;
+
+    public Student() {
+    }
+
+    public Student(int studentId, String name, int m1, int m2, int m3) {
+        this.studentId = studentId;
+        this.name = name;
+        this.m1 = m1;
+        this.m2 = m2;
+        this.m3 = m3;
+    }
+
+    public int getStudentId() { return studentId; }
+    public void setStudentId(int studentId) { this.studentId = studentId; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public int getM1() { return m1; }
+    public void setM1(int m1) { this.m1 = m1; }
+    public int getM2() { return m2; }
+    public void setM2(int m2) { this.m2 = m2; }
+    public int getM3() { return m3; }
+    public void setM3(int m3) { this.m3 = m3; }
+    public double getGpa() { return gpa; }
+    public void setGpa(double gpa) { this.gpa = gpa; }
+
+    public double calculateGpa() {
+        gpa = (1.0 / 3.0) * m1 + (1.0 / 2.0) * m2 + (1.0 / 4.0) * m3;
+        return gpa;
+    }
+
+    public void display() {
+        System.out.println("Student Id: " + studentId);
+        System.out.println("Name: " + name);
+        System.out.println("M1: " + m1);
+        System.out.println("M2: " + m2);
+        System.out.println("M3: " + m3);
+    }
+}

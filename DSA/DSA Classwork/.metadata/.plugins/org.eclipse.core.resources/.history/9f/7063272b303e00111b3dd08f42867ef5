@@ -1,0 +1,70 @@
+package com.demo.arrays;
+
+public class MyArray {
+
+	private int[] arr;
+	private int count;
+	
+	public MyArray() {
+		arr= new int[10];
+		count=0;
+	}
+	
+	public MyArray(int size) {
+		super();
+		arr= new int[size];
+		count=0;
+	}
+
+	public MyArray(int[] arr, int count) {
+		super();
+		this.arr = arr;
+		this.count = count;
+	}
+	
+	public int getCapacity() {
+		return arr.length;
+	}
+	
+	public int getCount() {
+		return count;
+	}
+	
+	
+	
+	public boolean add(int x) {
+		if(count<arr.length) {
+			arr[count] = x;
+			count++;
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	public boolean addByPosition(int x, int pos) {
+		if(count < arr.length && pos<count) {
+			for(int i=count; i>=pos; i--) {
+				arr[i] = arr[i-1];
+			}
+			arr[pos]=x;
+			count++;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

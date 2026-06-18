@@ -1,0 +1,24 @@
+package com.demo.model;
+
+public class ElectricVehicle extends Vehicle {
+	private double batteryCapacity;
+	private double chargingTime;
+	
+	
+	public ElectricVehicle() {
+		super();
+		System.out.println("In Electric Vehicle default constructore");
+	}
+
+
+	public ElectricVehicle(double batteryCapacity, double chargingTime) {
+		super(vid, vname, price , status);
+		this.batteryCapacity = batteryCapacity;
+		this.chargingTime = chargingTime;
+	}
+	
+	
+	
+	
+	
+}

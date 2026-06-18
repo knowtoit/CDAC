@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+E:\CDAC\JAVA\JAVA Classwork\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3792970045.index
+2077444961.index

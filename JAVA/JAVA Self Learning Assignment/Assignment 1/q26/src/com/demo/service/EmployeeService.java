@@ -1,0 +1,10 @@
+package com.demo.service;
+
+public class EmployeeService {
+    @SuppressWarnings("unused")
+	private void displayEmployeeDetails() {
+        System.out.println("Private method called using reflection");
+        System.out.println("Employee Name: Rahul");
+        System.out.println("Employee Department: IT");
+    }
+}

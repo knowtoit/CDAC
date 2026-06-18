@@ -1,0 +1,982 @@
+
+DBT Mock 1 Batch FEB 2026
+Total points
+41/62
+ 
+The respondent's email (saichaudharid@gmail.com) was recorded on submission of this form.
+ 
+Which of the following is an example of data redundancy in a relational database?
+
+
+*
+1/1
+a) Storing customer address in multiple tables without normalization.
+ 
+b) Using a primary key to enforce unique rows in a table.
+c) Using IN operator to filter records.
+d) Using DISTINCT to remove duplicate records
+ 
+Which of the following TCL commands is used to permanently save changes made to a transaction?
+
+
+*
+1/1
+a) ROLLBACK
+b) COMMIT
+ 
+c) SAVEPOINT
+d) GRANT
+ 
+What does this SQL query return?
+
+SELECT DISTINCT DepartmentID FROM Employees;
+
+
+
+*
+1/1
+a) Returns all unique department IDs from the Employees table.
+ 
+b) Returns all department IDs, including duplicates.
+c) Returns only the first department ID found.
+d) Returns all columns from the Employees table, with duplicates.
+ 
+Which of the following index types is used in MySQL to speed up searches and ensures that values in the indexed column are unique?
+
+
+
+*
+0/1
+a) Full-text Index
+b) Hash Index
+ 
+c) Unique Index
+d) Spatial Index
+Correct answer
+c) Unique Index
+ 
+Which SQL code snippet demonstrates correct usage of JOIN between the Customers and Orders tables to retrieve customer names and their order details?sql
+
+
+
+SELECT Customers.CustomerName, Orders.OrderID, Orders.OrderDate
+
+FROM Customers
+
+INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+
+
+*
+1/1
+a) This code correctly uses INNER JOIN to retrieve customer details along with their orders.
+ 
+b) INNER JOIN should be replaced by LEFT JOIN to include customers with no orders.
+c) The INNER JOIN should use WHERE instead of ON.
+d) The ON condition should use Orders.CustomerID = Customers.CustomerID instead.
+ 
+Which of the following functional dependencies is a violation of 3rd Normal Form (3NF)?
+
+
+
+*
+1/1
+a) EmployeeID → EmployeeName
+b) StudentID → CourseID
+c) StudentID → InstructorName (where InstructorName depends on CourseID)
+ 
+d) StudentID → StudentName
+ 
+What is the result of this SQL query?
+
+UPDATE Students
+
+SET StudentName = 'Jane Doe'
+
+WHERE StudentID = 1;
+
+
+*
+1/1
+a) It will insert a new record with StudentName = 'Jane Doe'.
+b) It will update the StudentName of the student with StudentID = 1 to 'Jane Doe'.
+ 
+c) It will delete the record where StudentID = 1.
+d) It will change all StudentName values to 'Jane Doe'
+ 
+Which SQL code snippet demonstrates correct use of foreign key constraints to ensure referential integrity between Orders and Customers?
+
+CREATE TABLE Orders (
+
+    OrderID INT PRIMARY KEY,
+
+    CustomerID INT,
+
+    OrderDate DATE,
+
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID) ON DELETE CASCADE
+
+);
+
+
+
+*
+0/1
+a) This code correctly creates a foreign key with ON DELETE CASCADE to maintain referential integrity.
+b) The foreign key should not include the ON DELETE CASCADE clause.
+c) The foreign key constraint should reference the Orders table, not the Customers table.
+ 
+d) The CustomerID should not be a foreign key in the Orders table.
+Correct answer
+a) This code correctly creates a foreign key with ON DELETE CASCADE to maintain referential integrity.
+ 
+What will be the result of the following SQL query?
+
+SELECT COUNT(DISTINCT CourseID) FROM Enrollments;
+
+
+*
+1/1
+a) Count of all CourseID values in the Enrollments table.
+b) Count of unique CourseID values in the Enrollments table.
+ 
+c) Count of all rows in the Enrollments table.
+d) Sum of all CourseID values in the Enrollments table.
+ 
+Which normal form does this table violate?
+
+
+StudentID
+
+
+CourseID
+
+
+InstructorName
+
+
+1    C101    Prof. A
+
+
+1     102      Prof. B
+
+
+2     C101   Prof. A
+
+
+2     C103   Prof. C
+
+
+
+*
+0/1
+a) 1st Normal Form (1NF)
+b) 2nd Normal Form (2NF)
+ 
+c) 3rd Normal Form (3NF)
+d) Boyce-Codd Normal Form (BCNF)
+Correct answer
+c) 3rd Normal Form (3NF)
+ 
+What does the DISTINCT keyword do in this SQL query?
+
+SELECT DISTINCT Department FROM Employees;
+
+
+
+*
+1/1
+a) Returns only the first department listed.
+b) Returns all departments, including duplicates.
+c) Returns unique department names, excluding duplicates.
+ 
+d) Returns only employees from one department.
+ 
+Given the following SQL query, what is the purpose of the EXISTS keyword?
+
+ 
+
+SELECT * FROM Orders
+
+WHERE EXISTS (SELECT * FROM Customers WHERE Orders.CustomerID = Customers.CustomerID);
+
+
+
+*
+0/1
+a) Checks for records where Orders.CustomerID matches Customers.CustomerID.
+ 
+b) Returns all rows from Orders where the Customers table contains any matching records.
+c) Ensures that Customers table has no matching records.
+d) Filters rows that exist only in the Orders table.
+Correct answer
+b) Returns all rows from Orders where the Customers table contains any matching records.
+ 
+Which of the following data models is NOT one of the major three types of database models?
+
+
+
+*
+1/1
+a) Relational model
+b) Hierarchical model
+c) Object-relational model
+d) Flat-file model
+ 
+ 
+Which SQL code snippet demonstrates correct usage of DDL commands to modify an existing table by adding a new column for Age and setting a default value?
+
+ALTER TABLE Employees
+
+ADD COLUMN Age INT DEFAULT 30;
+
+
+*
+1/1
+a) This code correctly adds a column Age with a default value of 30 to the Employees table.
+ 
+b) The ALTER TABLE statement should be used with CREATE COLUMN, not ADD COLUMN.
+c) The DEFAULT value should be assigned after the column definition.
+d) The ALTER TABLE command cannot set default values for columns in MySQL
+ 
+What is the correct SQL syntax to group records in the Sales table by the ProductID column?
+
+SELECT ProductID, SUM(SaleAmount)
+
+FROM Sales
+
+GROUP BY ProductID;
+
+
+*
+1/1
+a) GROUP BY groups the records based on the ProductID column.
+ 
+b) GROUP BY groups the records based on the SaleAmount column.
+c) GROUP BY is not valid in SQL.
+d) GROUP BY is only valid for non-numeric columns
+ 
+Which of the following statements about Temporary Tables is true in MySQL?
+
+
+
+*
+1/1
+a) Temporary tables are automatically dropped when the session ends
+ 
+b) Temporary tables are visible to all sessions
+c) Temporary tables must be dropped manually to release resources
+d) Temporary tables can only be used with the InnoDB storage engine
+ 
+Which SQL query will select all records from the Customers table where the Country is either 'USA' or 'Canada'?
+
+SELECT * FROM Customers WHERE Country IN ('USA', 'Canada');
+
+
+
+*
+0/1
+a) SELECT * FROM Customers WHERE Country LIKE 'USA' OR Country LIKE 'Canada';
+b) SELECT * FROM Customers WHERE Country = 'USA' AND Country = 'Canada';
+ 
+c) SELECT * FROM Customers WHERE Country IN ('USA', 'Canada');
+d) SELECT * FROM Customers WHERE Country = 'USA' OR Country = 'Canada';
+Correct answer
+c) SELECT * FROM Customers WHERE Country IN ('USA', 'Canada');
+ 
+What will this SQL query do?
+
+SELECT COUNT(*) FROM Orders
+
+WHERE OrderDate BETWEEN '2022-01-01' AND '2022-12-31';
+
+
+*
+1/1
+a) Count of all orders placed in the year 2022.
+ 
+b) Count of all orders where the OrderDate is null.
+c) Count of all orders where the OrderDate is after 2022-12-31.
+d) Count of all orders placed before 2022.
+ 
+Which of the following is NOT a valid SQL constraint in MySQL?
+
+*
+1/1
+a) PRIMARY KEY
+b) UNIQUE
+c) CHECK
+ 
+d) FOREIGN KEY
+ 
+ Which of the following queries will create a copy of the structure of a table Customers into a new table Customers_Copy, without copying the data?
+CREATE TABLE Customers_Copy AS SELECT * FROM Customers WHERE 1 = 0;
+
+
+*
+0/1
+a) Creates both the structure and data of Customers.
+b) Creates only the structure of Customers and no data.
+c) Creates only the data of Customers without structure.
+d) Copies data from Customers to Customers_ Copy
+ 
+Correct answer
+b) Creates only the structure of Customers and no data.
+ 
+What is the result of the following SQL query?
+
+SELECT * FROM Orders WHERE OrderDate BETWEEN '2022-01-01' AND '2022-12-31';
+
+*
+1/1
+a) It will select orders placed before January 1, 2022.
+b) It will select orders placed after December 31, 2022.
+c) It will select orders placed between January 1, 2022, and December 31, 2022.
+ 
+d) It will select all orders from the Orders table.
+PRN
+*
+260245920006
+ 
+Which SQL command is used to define a view named EmployeeView that selects EmployeeID and EmployeeName from the Employees table?
+
+CREATE VIEW EmployeeView AS
+
+SELECT EmployeeID, EmployeeName FROM Employees;
+
+What will this query do?
+
+
+*
+0/1
+a) It will create a temporary view.
+ 
+b) It will create a permanent view.
+c) It will create a new table.
+d) It will create a new stored procedure
+Correct answer
+b) It will create a permanent view.
+ 
+What will be the result of the following SQL query?
+
+SELECT COUNT(DISTINCT CourseID) FROM Enrollments;
+
+
+*
+1/1
+a) Count of all CourseID values in the Enrollments table.
+b) Count of unique CourseID values in the Enrollments table.
+ 
+c) Count of all rows in the Enrollments table.
+d) Sum of all CourseID values in the Enrollments table.
+NAME
+*
+Aishwarya Chaudhari
+ 
+What is the difference between a database instance and a schema in MySQL?
+
+
+
+*
+0/1
+a) A database instance refers to the actual data while schema defines the structure of the database.
+b) A database instance is a set of schemas, and a schema is a collection of users.
+c) A database instance and schema are the same thing in MySQL.
+d) A database instance is only used in cloud databases, while a schema is used in relational databases.
+ 
+Correct answer
+a) A database instance refers to the actual data while schema defines the structure of the database.
+ 
+Which SQL code snippet demonstrates the correct use of Codd's 12th rule (View Updating Rule) in a relational database?sql
+
+
+
+CREATE VIEW EmployeeDetails AS
+
+SELECT EmployeeID, EmployeeName, Department FROM Employees
+
+WHERE Active = 1;
+
+
+*
+0/1
+a) This view is valid under Codd’s 12th rule because it can be updated through the underlying tables.
+b) Views defined with WHERE clauses cannot be updated under Codd’s 12th rule.
+c) Codd’s 12th rule does not allow the creation of any views.
+d) Views should only contain JOIN operations to satisfy Codd’s 12th rule
+ 
+Correct answer
+a) This view is valid under Codd’s 12th rule because it can be updated through the underlying tables.
+ 
+Which of the following statements is correct about stored procedures?
+
+
+
+*
+1/1
+a) Stored procedures can have IN, OUT, and INOUT parameters to handle input and output values
+ 
+b) Stored procedures cannot accept parameters
+c) Stored procedures are only used to insert data into a table
+d) Stored procedures are only available in MySQL's InnoDB storage engine
+ 
+Which SQL command is used to create a new table in MySQL with a primary key constraint?
+
+ 
+
+CREATE TABLE Students (
+
+    StudentID INT PRIMARY KEY,
+
+    Name VARCHAR(100),
+
+    Age INT
+
+);
+
+
+
+*
+0/1
+a) INSERT INTO Students
+ 
+b) CREATE DATABASE Students
+c) CREATE TABLE Students
+d) ALTER TABLE Students ADD PRIMARY KEY (StudentID)
+Correct answer
+c) CREATE TABLE Students
+ 
+Which SQL code snippet correctly drops a table Products if it exists, and prevents errors if the table is not found?
+
+DROP TABLE IF EXISTS Products;
+
+
+*
+1/1
+a) This code correctly drops the Products table if it exists.
+ 
+b) The DROP TABLE statement cannot use IF EXISTS in MySQL.
+c) The DROP statement should include CASCADE to handle dependent objects.
+d) The DROP TABLE command must always be executed with CASCADE to avoid errors
+ 
+What will the following SQL query do?
+
+DELETE FROM Students WHERE StudentID = 1;
+
+
+*
+1/1
+a) It will delete all rows in the Students table.
+b) It will delete the row where StudentID = 1.
+ 
+c) It will remove the column StudentID from the Students table.
+d) It will update the StudentName where StudentID = 1.
+ 
+Consider the Entity-Relationship Diagram (ERD) where a Department has many Employees, and Employee works for one Department. Which relationship should be represented?
+
+
+
+*
+0/1
+a) One-to-one
+b) One-to-many
+c) Many-to-many
+ 
+d) Many-to-one
+Correct answer
+b) One-to-many
+ 
+Given the SQL query:
+
+SELECT * FROM Employees
+
+INNER JOIN Departments
+
+ON Employees.DeptID = Departments.DeptID;
+
+What type of Join is being used?
+
+
+
+*
+1/1
+a) Equi Join
+b) Inner Join
+ 
+c) Outer Join
+d) Cross Join
+ 
+What is the main benefit of using indexes in a database?
+
+
+
+*
+0/1
+a) Improves the performance of INSERT and UPDATE operations
+b) Speeds up data retrieval operations such as SELECT queries
+c) Reduces the need for normalization
+d) Ensures data consistency across tables
+ 
+Correct answer
+b) Speeds up data retrieval operations such as SELECT queries
+ 
+Given the following SQL query, what does the AUTO_INCREMENT feature do?
+
+CREATE TABLE Employees (
+
+  EmployeeID INT AUTO_INCREMENT,
+
+  EmployeeName VARCHAR(100),
+
+  PRIMARY KEY (EmployeeID)
+
+);
+
+
+*
+1/1
+a) Automatically increments the EmployeeID each time a new row is inserted.
+ 
+b) Automatically sets the EmployeeID to a constant value.
+c) Automatically sets the EmployeeID to the maximum value of EmployeeID.
+d) Automatically inserts a value into the EmployeeName column
+ 
+Which of the following ACID properties ensures that a transaction will either be fully completed or not executed at all in case of a failure?
+
+
+
+*
+0/1
+a) Atomicity
+b) Consistency
+ 
+c) Isolation
+d) Durability
+Correct answer
+a) Atomicity
+ 
+Which of the following Relational Algebra operations returns rows that satisfy a given condition?
+
+
+
+*
+0/1
+a) Projection
+b) Selection
+c) Union
+ 
+d) Cartesian Product
+Correct answer
+b) Selection
+ 
+Which SQL code snippet correctly creates a table with foreign key constraints and checks for valid data?
+
+CREATE TABLE Orders (
+
+    OrderID INT PRIMARY KEY,
+
+    CustomerID INT,
+
+    OrderDate DATE,
+
+    CONSTRAINT FK_Customer FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+
+    CONSTRAINT CHK_OrderDate CHECK (OrderDate >= '2023-01-01')
+
+);
+
+*
+1/1
+a) This code correctly creates the Orders table with a foreign key and a check constraint.
+ 
+b) The foreign key constraint is incorrectly referencing the Customers table.
+c) The CHECK constraint should be placed after the PRIMARY KEY definition.
+d) Foreign key constraints cannot be defined in the CREATE TABLE statement
+ 
+Which SQL code snippet correctly uses GROUP BY and HAVING to find the number of orders per customer that have more than 5 orders?
+
+SELECT CustomerID, COUNT(OrderID) AS NumberOfOrders
+
+FROM Orders
+
+GROUP BY CustomerID
+
+HAVING COUNT(OrderID) > 5;
+
+
+*
+1/1
+a) This code correctly counts the number of orders per customer and filters customers with more than 5 orders.
+ 
+b) The HAVING clause should be used before the GROUP BY clause.
+c) The HAVING clause is not needed if COUNT is used in the SELECT statement.
+d) COUNT should be replaced with SUM to get the correct number of orders.
+ 
+Which SQL command would you use to remove all rows from a table without removing the table structure in MySQL?
+
+TRUNCATE TABLE Employees;
+
+
+
+*
+1/1
+a) DELETE FROM Employees;
+b) DROP TABLE Employees;
+c) TRUNCATE TABLE Employees;
+ 
+d) REMOVE ALL FROM Employees;
+ 
+Which SQL function will return the average value of a numeric column in a table?
+
+
+
+*
+1/1
+a) MAX()
+b) SUM()
+c) AVG()
+ 
+d) COUNT()
+ 
+Which SQL command is used to automatically assign a unique value to a column when a new record is inserted?
+
+
+
+*
+1/1
+a) SEQUENCE
+b) AUTO_INCREMENT
+ 
+c) SERIAL
+d) IDENTITY
+ 
+What will this SQL query do?
+
+INSERT INTO Students (StudentID, StudentName)
+
+VALUES (1, 'John Doe');
+
+
+
+*
+1/1
+a) Insert a new row with StudentID = 1 and StudentName = 'John Doe'.
+ 
+b) Update an existing row with StudentID = 1 to have StudentName = 'John Doe'.
+c) Delete the row where StudentID = 1.
+d) Return the number of rows in the Students table.
+ 
+Which of the following is true about DML (Data Manipulation Language) in SQL?
+
+
+
+*
+0/1
+a) DML commands are used for defining database structures.
+b) DML commands include CREATE, ALTER, and DROP.
+ 
+c) DML commands are used for querying and modifying data in tables.
+d) DML commands affect the database schema.
+Correct answer
+c) DML commands are used for querying and modifying data in tables.
+ 
+Which of the following TCL commands is used to undo changes made in the current transaction?
+
+
+
+*
+1/1
+a) COMMIT
+b) ROLLBACK
+ 
+c) SAVEPOINT
+d) GRANT
+ 
+Which SQL query syntax will produce the same result for the following operation in Relational Algebra: A ∪ B?
+
+SELECT column1 FROM A
+
+UNION
+
+SELECT column1 FROM B;
+
+
+
+*
+1/1
+a) UNION only returns distinct rows.
+ 
+b) UNION ALL includes duplicate rows.
+c) INTERSECT returns common rows.
+d) MINUS returns rows in A but not in B.
+ 
+Which of the following normal forms removes transitive dependencies?
+
+
+*
+1/1
+a) 1st Normal Form (1NF)
+b) 2nd Normal Form (2NF)
+c) 3rd Normal Form (3NF)
+ 
+d) Boyce-Codd Normal Form (BCNF
+ 
+Which MySQL command is used to create a temporary table?
+
+CREATE TEMPORARY TABLE temp_table (
+
+    id INT PRIMARY KEY,
+
+    name VARCHAR(100)
+
+);
+
+What does this query do?
+
+
+
+*
+1/1
+a) Creates a temporary table that will be available for the duration of the session
+ 
+b) Creates a permanent table that will persist across sessions
+c) Creates a table that can only be used for SELECT queries
+d) Creates a table that will be dropped after one day
+ 
+In which MySQL Storage Engine are transactions, foreign key constraints, and ACID properties supported?
+
+
+
+*
+1/1
+a) MyISAM
+b) InnoDB
+ 
+c) MEMORY
+d) MERGE
+ 
+In a Conceptual Data Model, which of the following is represented?
+
+
+
+*
+0/1
+a) Detailed structure of data
+ 
+b) Logical structure and relationships among entities
+c) High-level representation of the business environment
+d) Implementation-specific constraints
+Correct answer
+c) High-level representation of the business environment
+ 
+Given the following SQL statement:
+
+SELECT * FROM Orders WHERE EXISTS (SELECT 1 FROM Customers WHERE Customers.CustomerID = Orders.CustomerID);
+
+Which type of subquery is being used?
+
+
+
+*
+0/1
+a) Simple Subquery
+b) Correlated Subquery
+c) Inline View
+d) EXISTS Subquery
+ 
+Correct answer
+b) Correlated Subquery
+ 
+
+Which SQL code snippet demonstrates a correct use of ALTER TABLE to add a new column and set a default value in MySQL?
+
+ALTER TABLE Employees
+
+ADD COLUMN Department VARCHAR(100) DEFAULT 'General';
+
+
+
+*
+1/1
+a) This code correctly adds a Department column with a default value.
+ 
+b) Default values should be defined inside the CREATE statement, not with ALTER TABLE.
+c) The column type should be VARCHAR(50) instead of VARCHAR(100).
+d) The ALTER TABLE command cannot add a default value to a new column.
+ 
+Which SQL function will return the average value of a numeric column in a table?
+
+
+
+*
+1/1
+a) MAX()
+b) SUM()
+c) AVG()
+ 
+d) COUNT()
+ 
+Which SQL code snippet correctly implements a trigger to update the LastModified field in the Employees table whenever an Employee record is updated?
+
+CREATE TRIGGER UpdateEmployeeTimestamp
+
+BEFORE UPDATE ON Employees
+
+FOR EACH ROW
+
+SET NEW.LastModified = NOW();
+
+.
+*
+0/1
+a) This code correctly creates a trigger that updates LastModified whenever an employee record is updated.
+b) The SET command should be placed inside the BEGIN and END block.
+c) The trigger should be AFTER UPDATE instead of BEFORE UPDATE.
+d) NEW.LastModified should be replaced with OLD.LastModified to refer to the previous value
+ 
+Correct answer
+a) This code correctly creates a trigger that updates LastModified whenever an employee record is updated.
+ 
+Which of the following is a valid example of a NoSQL Database?
+
+
+
+*
+1/1
+a) MySQL
+b) PostgreSQL
+c) MongoDB
+ 
+d) Oracle
+ 
+What is the primary advantage of using stored procedures in MySQL?
+
+
+
+*
+1/1
+a) Stored procedures increase the complexity of queries
+b) Stored procedures are not reusable once created
+c) Stored procedures improve performance by reducing network traffic and providing encapsulation
+ 
+d) Stored procedures are faster than direct SQL queries in every case
+ 
+Which of the following SQL statements can be used to revoke the privilege of selecting from the Employees table?
+
+
+
+*
+1/1
+a) REVOKE SELECT ON Employees FROM User1;
+ 
+b) GRANT SELECT ON Employees TO User1;
+c) DENY SELECT ON Employees FROM User1;
+d) REMOVE SELECT ON Employees FROM User1;
+ 
+Which of the following SQL operators is used to test for null values?
+
+
+
+*
+1/1
+a) BETWEEN
+b) LIKE
+c) IS NULL
+ 
+d) IN
+ 
+Which of the following Relational Algebra operations is used to return rows that do not appear in another set?
+
+
+
+*
+1/1
+a) Union
+b) Intersect
+c) Minus
+ 
+d) Cartesian Product
+ 
+In a Join operation, which type of join only returns rows where there is a matching row in both tables?
+
+
+
+*
+0/1
+a) Cross Join
+ 
+b) Outer Join
+c) Inner Join
+d) Natural Join
+Correct answer
+c) Inner Join
+ 
+Which MySQL data type would you use to store decimal numbers with high precision?
+
+
+
+*
+1/1
+a) INT
+b) FLOAT
+c) DECIMAL
+ 
+d) VARCHAR
+ 
+Which of the following commands will allow you to change the name of a column in an existing table in MySQL?
+
+ALTER TABLE Students CHANGE COLUMN old_name new_name VARCHAR(255);
+
+
+
+*
+0/1
+a) ALTER COLUMN
+b) MODIFY COLUMN
+ 
+c) CHANGE COLUMN
+d) RENAME COLUMN
+Correct answer
+c) CHANGE COLUMN
+ 
+Which SQL code snippet correctly creates a table with unique constraints on the Email field and Phone field, ensuring no duplicates?
+
+CREATE TABLE Employees (
+
+    EmployeeID INT PRIMARY KEY,
+
+    Name VARCHAR(100),
+
+    Email VARCHAR(100) UNIQUE,
+
+    Phone VARCHAR(15) UNIQUE
+
+);
+
+
+
+*
+1/1
+a) This code correctly creates the Employees table with unique constraints on Email and Phone.
+ 
+b) The UNIQUE constraint cannot be applied to multiple columns in the CREATE TABLE statement.
+c) The Phone column should be indexed, not constrained as unique.
+d) The UNIQUE constraint is not valid for Phone in the CREATE statement.
+ 
+Which of the following is NOT a feature of Relational Databases as per Codd's 12 Rules?
+
+
+
+*
+0/1
+a) Data should be represented in tables.
+b) Operations should be based on set theory.
+c) The DBMS should support hierarchical data storage.
+d) Every column in a table must contain atomic values.
+ 
+Correct answer
+c) The DBMS should support hierarchical data storage.
+This content is neither created nor endorsed by Google. - Contact form owner - Terms of Service - Privacy Policy
+Does this form look suspicious? Report
+
+Google Forms

@@ -1,0 +1,28 @@
+package com.demo.dao;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import com.demo.model.PetrolVehicle;
+import com.demo.model.Vehicle;
+
+public class VehicleDaoImpl implements VehicleDao {
+
+	static Set<Vehicle> vset;
+	
+	static {
+		vset= new HashSet<>();
+		vset.add(new PetrolVehicle(1, "Jupiter", 23000, "sold","petrol", 23.00 ));
+	}
+	@Override
+	public boolean save(Vehicle v) {
+		// TODO Auto-generated method stub
+		return vset.add(v);
+	}
+	@Override
+	public boolean removeById(int id) {
+		// TODO Auto-generated method stub
+		return vset.remove(new PetrolVehicle(id));
+	}
+
+}

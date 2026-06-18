@@ -1,0 +1,7 @@
+package com.demo.sorting;
+
+public class BubbleSortAlgorithm {
+	public static void BubbleSort(int[] arr) {
+		
+	}
+}

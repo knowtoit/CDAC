@@ -1,0 +1,16 @@
+package com.demo;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class StudentService {
+	static Student[] sarr;
+	static int count;
+	static {
+		sarr = new Student[100];
+		sarr[0] = new Student(12, "Aish" , 89,78,98, new Date());
+		sarr[1] = new Student(13, "Deepa", 88, 98, 67, new Date());
+		count = 2;
+	}
+}

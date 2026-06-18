@@ -1,0 +1,141 @@
+package com.demo.arrays;
+
+public class MyArray {
+
+	private int[] arr;
+	private int count;
+	
+	public MyArray() {
+		arr= new int[10];
+		count=0;
+	}
+	
+	public MyArray(int size) {
+		super();
+		arr= new int[size];
+		count=0;
+	}
+
+	public MyArray(int[] arr, int count) {
+		super();
+		this.arr = arr;
+		this.count = count;
+	}
+	
+	public int getCapacity() {
+		return arr.length;
+	}
+	
+	public int getCount() {
+		return count;
+	}
+	
+	
+	//Add element in array
+	public boolean add(int x) {
+		if(count<arr.length) {
+			arr[count] = x;
+			count++;
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	
+	//Add element at given position
+	
+	public boolean addByPosition(int x, int pos) {
+		if(count < arr.length && pos<count) {
+			for(int i=count; i>=pos; i--) {
+				arr[i] = arr[i-1];
+			}
+			arr[pos]=x;
+			count++;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
+	//Search value in array and return it's position
+	
+	public int searchByValue(int value) {
+		for(int i=0; i<count; i++) {
+			if(arr[i]==value) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	
+	//Delete from given position
+	public boolean deleteByPosition(int pos) {
+		if(pos<count) {
+			for(int i=pos+1; i<count;i++) {
+				arr[i-1] = arr[i];
+			}
+			count--;
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	//delete by value
+	public int deleteByValue(int value) {
+		int pos = searchByValue(value);
+		if(pos != -1) {
+			boolean flag = deleteByPosition(pos);
+			if(flag) {
+				return pos;
+			}
+		}
+		return -1;
+	}
+	
+	
+	//Rotate Array
+	
+	//flag = true then rotate in right direction
+	//flag = false then rotate in left direction
+	
+	public void rotateArray(boolean flag, int num) {
+		if(flag) {
+			//Right direction rotation
+			for(int j=0;j<num;j++) {
+				int temp = arr[count-1];
+				for(int i=count-1;i>0;i--) {
+					arr[i] = arr[i-1];
+				}
+				arr[0] = temp;
+			}
+		}
+		else {
+			//left rotation
+			for(int j=0; j<num; j++) {
+				int temp = arr[0];
+				for(int i=0; i<count-1; i++) {
+					arr[i]= arr[i+1];
+				}
+				arr[count -1] = temp;
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

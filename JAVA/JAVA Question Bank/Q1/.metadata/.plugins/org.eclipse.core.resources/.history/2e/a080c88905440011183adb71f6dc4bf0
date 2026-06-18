@@ -1,0 +1,15 @@
+package com.demo.service;
+
+public interface VehicleService {
+
+	boolean addNewVehicle(int ch);
+
+	boolean deleteById(int id);
+
+	boolean updatePriceById(int id, double newPrice);
+
+	boolean sellVehicle(int id);
+
+	boolean purchaseVehicle(int id);
+
+}

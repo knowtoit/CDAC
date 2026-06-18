@@ -1,0 +1,16 @@
+package com.demo.test;
+
+import com.demo.service.VehicleService;
+
+public class TestVehicleDemo {
+	public static void main(String[] args) {
+		VehicleService vservice = new VehicleServiceImpl();
+		int choice=0;
+		
+		do {
+			System.out.println();
+		}
+		while(choice != 10);
+	}
+
+}

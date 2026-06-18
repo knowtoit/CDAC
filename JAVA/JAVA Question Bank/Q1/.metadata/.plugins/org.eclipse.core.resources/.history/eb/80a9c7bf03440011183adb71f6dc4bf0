@@ -1,0 +1,84 @@
+package com.demo.dao;
+
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
+
+import com.demo.model.ElectricVehicle;
+import com.demo.model.PetrolVehicle;
+import com.demo.model.Vehicle;
+
+public class VehicleDaoImpl implements VehicleDao {
+
+	static Set<Vehicle> vset;
+	
+	static {
+		vset= new HashSet<>();
+		vset.add(new PetrolVehicle(1, "Jupiter", 23000, "sold","petrol", 23.00 ));
+	}
+	@Override
+	public boolean save(Vehicle v) {
+		// TODO Auto-generated method stub
+		return vset.add(v);
+	}
+	@Override
+	public boolean removeById(int id) {
+		// TODO Auto-generated method stub
+		return vset.remove(new PetrolVehicle(id));
+	}
+	
+	public boolean modifyPriceById(int id, double newPrice) {
+		// TODO Auto-generated method stub
+		Vehicle v = findById(id);
+		if(v!=null) {
+			if(v instanceof ElectricVehicle) {
+				((ElectricVehicle)v).setPrice(newPrice);
+			}
+			else if(v instanceof PetrolVehicle) {
+				((PetrolVehicle)v).setPrice(newPrice);
+			}
+			return true;
+		}
+		return false;
+	}
+	public Vehicle findById(int id) {
+		// TODO Auto-generated method stub
+		Optional <Vehicle> op= vset.stream().filter(v->v.getVid()==id).findFirst();
+		return op.orElse(null);
+	}
+	public boolean sellVehicleById(int id) {
+		// TODO Auto-generated method stub
+		Vehicle v = findById(id);
+		if(v!= null) {
+			if(v.getStatus().equalsIgnoreCase("Available")) {
+				v.setStatus("Sold");
+			}
+			else {
+				System.out.println("Vehicle already sold!");
+				return false;
+			}
+		}
+		else{
+			System.out.println("Vehicle not found");
+		}
+		return false;
+	}
+	@Override
+	public boolean purchaseVehicleById(int id) {
+		// TODO Auto-generated method stub
+		Vehicle v = findById(id);
+		if(v !=null) {
+			if(v.getStatus().equalsIgnoreCase("Sold")) {
+				v.setStatus("Available");
+			}
+			else {
+				System.out.println("Vehicle already available");
+			}
+		}
+		else {
+			System.out.println("Vehicle not found");
+		}
+		return false;
+	}
+
+}

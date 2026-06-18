@@ -1,0 +1,10 @@
+package com.demo;
+import java.util.stream.Stream;
+
+public class VariableLengthArray {
+	public static void main(String[] args) {
+		int [][] arr2 = new int[3][];
+		ArrayVariableService.acceptData(arr2);
+		ArrayVariableService.displayData(arr2);
+	}
+}

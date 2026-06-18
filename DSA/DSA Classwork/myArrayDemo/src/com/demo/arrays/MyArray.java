@@ -1,0 +1,205 @@
+package com.demo.arrays;
+
+import java.util.Arrays;
+
+public class MyArray {
+
+	private int[] arr;
+	private int count;
+	
+	public MyArray() {
+		arr= new int[10];
+		count=0;
+	}
+	
+	public MyArray(int size) {
+		super();
+		arr= new int[size];
+		count=0;
+	}
+
+	public MyArray(int[] arr, int count) {
+		super();
+		this.arr = arr;
+		this.count = count;
+	}
+	
+	public int getCapacity() {
+		return arr.length;
+	}
+	
+	public int getCount() {
+		return count;
+	}
+	
+	
+	//Add element in array
+	public boolean add(int x) {
+		if(count<arr.length) {
+			arr[count] = x;
+			count++;
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	
+	//Add element at given position
+	
+	public boolean add(int x, int pos) {
+		if(count < arr.length && pos<count) {
+			for(int i=count; i>=pos; i--) {
+				arr[i] = arr[i-1];
+			}
+			arr[pos]=x;
+			count++;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
+	//Search value in array and return it's position
+	
+	public int searchByValue(int value) {
+		for(int i=0; i<count; i++) {
+			if(arr[i]==value) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	
+	//Delete from given position
+	public boolean deleteByPosition(int pos) {
+		if(pos<count) {
+			for(int i=pos+1; i<count;i++) {
+				arr[i-1] = arr[i];
+			}
+			count--;
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	//delete by value
+	public int deleteByValue(int value) {
+		int pos = searchByValue(value);
+		if(pos != -1) {
+			boolean flag = deleteByPosition(pos);
+			if(flag) {
+				return pos;
+			}
+		}
+		return -1;
+	}
+	
+	
+	//Rotate Array
+	
+	//flag = true then rotate in right direction
+	//flag = false then rotate in left direction
+	
+	public void rotateArray(boolean flag, int num) {
+		if(flag) {
+			//Right direction rotation
+			for(int j=0;j<num;j++) {
+				int temp = arr[count-1];
+				for(int i=count-1;i>0;i--) {
+					arr[i] = arr[i-1];
+				}
+				arr[0] = temp;
+			}
+		}
+		else {
+			//left rotation
+			for(int j=0; j<num; j++) {
+				int temp = arr[0];
+				for(int i=0; i<count-1; i++) {
+					arr[i]= arr[i+1];
+				}
+				arr[count -1] = temp;
+			}
+		}
+	}
+	
+	
+	
+	//if flag is true then reverse array inplace
+	//else reverse the copy of the array
+	
+	public int[] reverseArray(boolean flag) {
+		if(flag) {
+			for(int i=0,j=count-1;i<j; i++,j--) {
+				int temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+			return arr;
+		}
+		else {
+			int[] arr1 = new int[count];
+			for(int i=count-1,j=0;i>=0; i--,j++) {
+				arr1[j] = arr[i];
+			}
+			return arr1;
+		}
+		
+	}
+	
+	
+	//Exchange Index and value
+	public int findMax() {
+		int max = arr[0];
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i]>max) {
+				max = arr[i];
+			}
+		}
+		return max;
+	}
+	public int[] exchangeIndexValue() {
+		//find max number
+		//create a new array of size max+1
+		//initiate new array with -1
+		//copy indexes at value position
+		
+		int maxnum = findMax();
+		int[] arr1 = new int[maxnum+1];
+		for(int i=0; i<arr1.length; i++) {
+			arr1[i] = -1;
+		}
+		
+		//copy indexes at value position
+		for(int i=0; i<count; i++) {
+			int b= arr[i];
+			arr1[b]=i;
+		}
+		return arr1;
+		
+		
+	}
+	
+	//find sum of all numbers in array
+	
+	public int findSum() {
+		int sum=0;
+		for(int i=0;i<count; i++) {
+			sum += arr[i];
+		}
+		return sum;
+	}
+
+	@Override
+	public String toString() {
+		return "MyArray [arr=" + Arrays.toString(arr) + ", count=" + count + ", toString()=" + super.toString() + "]";
+	}
+	
+		
+}

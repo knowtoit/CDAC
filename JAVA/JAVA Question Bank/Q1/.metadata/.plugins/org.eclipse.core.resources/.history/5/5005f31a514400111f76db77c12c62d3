@@ -1,0 +1,31 @@
+package com.demo;
+
+import java.util.Scanner;
+
+public class TestMatrixRotation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter size of matrix");
+		int n = sc.nextInt();
+		
+		int[][] matrix = new int[n][n];
+		
+		System.out.println("Enter matrix elements");
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				matrix[i][j] = sc.nextInt();
+			}
+		}
+		
+		int[][]rotated = MatrixRotation.clockwiseRotation(matrix, n);
+		
+		MatrixRotation.displayMatrix(matrix, n);
+		
+		sc.close();
+	}
+
+}

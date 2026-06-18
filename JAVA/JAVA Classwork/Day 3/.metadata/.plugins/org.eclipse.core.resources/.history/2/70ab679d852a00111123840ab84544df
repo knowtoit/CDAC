@@ -1,0 +1,11 @@
+package com.demo;
+import java.util.*;
+
+class TestArray {
+	public static void main() {
+		int [] a = new int[10];
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+}

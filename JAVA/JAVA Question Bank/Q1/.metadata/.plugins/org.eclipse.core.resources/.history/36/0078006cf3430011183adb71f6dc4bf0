@@ -1,0 +1,50 @@
+package com.demo.model;
+
+public class PetrolVehicle extends Vehicle {
+	private String fuelType;
+	private double mileage;
+	
+	
+	public PetrolVehicle() {
+		super();
+		System.out.println("In petrol vehicle default constructor");
+	}
+
+
+	public PetrolVehicle( int vid, String vname, double price, String status, String fuelType, double mileage) {
+		super(vid, vname, price, status);
+		this.fuelType = fuelType;
+		this.mileage = mileage;
+	}
+
+
+	public String getFuelType() {
+		return fuelType;
+	}
+
+
+	public void setFuelType(String fuelType) {
+		this.fuelType = fuelType;
+	}
+
+
+	public double getMileage() {
+		return mileage;
+	}
+
+
+	public void setMileage(double mileage) {
+		this.mileage = mileage;
+	}
+
+
+	@Override
+	public String toString() {
+		return "PetrolVehicle [fuelType=" + fuelType + ", mileage=" + mileage + ", toString()=" + super.toString()
+				+ "]";
+	}
+	
+	
+	
+	
+}

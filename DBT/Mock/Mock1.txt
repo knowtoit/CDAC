@@ -1,0 +1,834 @@
+
+DBT Mock 2 Batch FEB 2026
+Total points
+31/60
+ 
+The respondent's email (saichaudharid@gmail.com) was recorded on submission of this form.
+ 
+Q. 18. Hierarchical model is also called as
+
+
+
+*
+1/1
+1. Tree structure
+ 
+2. plex structure
+3. Normalize structure
+4. Table structure
+ 
+Q. 35. Which keyword is used to create a variable in a stored procedure?
+
+
+
+*
+1/1
+1. UPDATE
+2. INSERT
+3. SELECT
+4. DECLARE
+ 
+ 
+Q. 36. Which of the following SQL statements deletes all rows table called sales?
+
+
+
+*
+0/1
+1. DELETE Sales
+2. DELETE FROM Sales
+3. DELETE * FROM Sales
+ 
+4. DELETE ALL Sales
+Correct answer
+2. DELETE FROM Sales
+ 
+Q. 42. DATEDIFF function in MySQL will display difference between two dates in terms of ______________
+
+
+
+*
+1/1
+1. number of months
+2. number of days
+ 
+3. number of years
+4. all of the above
+ 
+Q. 60. To iterate the cursor and return more documents , which of the following keyword in the mongo shell would we type?
+
+
+
+*
+0/1
+1. cursor
+2. it
+3. next
+ 
+4. more
+Correct answer
+2. it
+ 
+47.  The term _______ is used to refer to a row.
+
+*
+0/1
+1. Attribute
+ 
+2. Tuple
+3. Field
+4. Instance
+Correct answer
+2. Tuple
+ 
+Q. 52. Which of the following is not a valid TCL command?
+
+
+
+*
+0/1
+1. SAVEPOINT
+ 
+2. COMMIT
+3. ROLLBACK
+4. REVOKE
+Correct answer
+4. REVOKE
+ 
+Q. 22. Which of the following is correct create index command
+
+
+
+*
+0/1
+1. create index index_name on database_name;
+2. create index index_name on ( index_columns );
+3. create index index_name on table_name( index_columns );
+4. create index index_name on table_name;
+ 
+Correct answer
+3. create index index_name on table_name( index_columns );
+ 
+Q. 19. What is the output of following query ?
+
+Select name , concat(region_code.phone_number) “custcode” from customers;
+
+
+
+*
+1/1
+1. it will display name and custcode column from table
+2. it will display name , combine value of region_code,phone_number and display in column custcode
+ 
+3. It will display name and region code
+4. it will show error
+ 
+Q. 10. Third normal form is based on the concept of_________
+
+
+
+*
+1/1
+1. Closure dependency
+2. Transitive dependency
+ 
+3. Normal dependency
+4. Functional dependency
+ 
+Q. 23. All aggregate functions except _____ ignore null values in their input collection fill the blank with correct option
+
+
+
+*
+1/1
+1. Count(attribute)
+ 
+2. Count(*)
+3. Avg
+4. Sum
+ 
+Q. 16. Identify the correct operator select * from students where country ______ (‘India’,’Australia’, ‘Japan’);
+
+
+
+*
+1/1
+1. =
+2. LIKE
+3. IN
+ 
+4. ALL
+PRN
+*
+260245920006
+ 
+Q. 57. Which of the following is not MySQL storage engine?
+
+
+
+*
+1/1
+1. MyISAM
+2. InnoDB
+3. csv
+4. FEDERAL
+ 
+NAME
+*
+Aishwarya Chaudhari
+ 
+Q. 45. Which of the followig option is correct
+
+
+
+*
+0/1
+1. stored procedure and function doesn’t return a value
+2. stored procedure and function doesn’t return a value but a function returns a value
+ 
+3. stored procedure and function return a value
+4. function doesn’t return a value but a stored procedure returns a value
+Correct answer
+3. stored procedure and function return a value
+ 
+Q. 28. Which one of the following is not true for a view
+
+
+
+*
+0/1
+1. view is derived from other tables
+2. view is a virtual tables
+3. A view definition is permanently stored as part of the database
+ 
+4. view never contains derived columns
+Correct answer
+4. view never contains derived columns
+ 
+Q. 1.  Which of the following is wrong statement?
+
+
+
+*
+1/1
+1. MySQL server is by default asensitive.
+2. An insensitive cursor performs faster than an asensitive cursor.
+3. MySQL server is read-only.
+ 
+4. MySQL server is non-scrollable.
+ 
+Q. 56. Which of the following is a wrong statement?
+
+
+
+*
+0/1
+1. In MongoDB, field names cannot start with the dollar sign ( $ ) character
+ 
+2. In MongoDB, field names cannot contain dot(.) character
+3. BSON document cannot have more than one field with the same name
+4. BSON is a serialization format encoding format for JSON
+Correct answer
+4. BSON is a serialization format encoding format for JSON
+ 
+Q. 38. The EMPLOYEES table contains these columns:
+
+LAST_NAME VARCHAR (25)
+
+SALARY_NUMBER(62)
+
+COMMISSION_PCT NUMBER(6)
+
+You need to write a query that will produce these results:
+
+1.       Display the salary multiplied by the commission_pct
+
+2.       Exclude employees with a zero commission_pct
+
+3.       Display a zero for employees with a null commission value
+
+Evaluate the SQL statement
+
+SELECT LAST_NAME, SALARY COMMISSION_PCT
+
+FROM EMPLOYEES
+
+WHERE COMMISSION_PCT IS NOT NULL;
+
+What does the statement provide?
+
+
+
+*
+1/1
+1. all of these desired results
+2. two of these desired results
+3. one of these desired results
+ 
+4. an error statement
+ 
+Q. 55. Which column attribute enables the generations of sequential numbers automatically for identification?
+
+
+
+*
+1/1
+1. AUTO_INCREMENT
+ 
+2. UNSIGNED
+3. IDENTITY
+4. DESCRIBE
+ 
+Q. 3. Which of the following is wrong statement?
+
+
+
+*
+1/1
+1. MySQL removes temporary table automatically when the session ends or the connection is terminated
+2. A temporary table is only available and accessible to the client that creates it.
+3. A temporary table can have same name as a normal table in a database.
+4. MySQL does not support temporary Table.
+ 
+ 
+Q. 59. Which of the following is not a NoSQL database?
+
+
+
+*
+0/1
+1. SQL Server
+2. MongoDB
+3. Cassandra
+4. Hbase
+ 
+Correct answer
+1. SQL Server
+ 
+Q. 40.  NULL is _____
+
+
+
+*
+1/1
+1. the same as 0 for integer
+2. the same as blank for character
+3. the same as 0 for integer and blank for character
+4. not a value
+ 
+ 
+Q. 33. Aggregate functions can be used in the select list or the _____ clause of a select statement or subquery they be used in a ________ clause
+
+
+
+*
+0/1
+1. HAVING, WHERE
+2. GROUP BY, HAVING
+3. GROUP BY, WHERE
+ 
+4. WHERE, HAVING
+Correct answer
+1. HAVING, WHERE
+ 
+Q. 49. The names of the columns can be altered in a query’s results by using the _____ keyword
+
+
+
+*
+1/1
+1. Named
+2. Rename
+3. Alias
+4. As
+ 
+ 
+Q. 48. In MySQL if you would like to throw your own exceptions, you can do so by changing SQLSTATE using _______ keyword
+
+
+
+*
+0/1
+1. SIGNAL
+2. SQLEXCEPTION
+3. DECLARE
+ 
+4. END
+Correct answer
+1. SIGNAL
+ 
+Q. 39. SELECT Student, marks from table where marks > SELECT AVG(marks) from table What function will be performed by the above query
+
+
+
+*
+1/1
+1. find students, and marks from table
+2. Query will show error
+3. find all the students, whose marks are greater than average marks
+ 
+4. average marks of the students
+ 
+Q. 41. An ER diagram can express the overall _______ of a database graphically
+
+
+
+*
+0/1
+1. View Structure
+ 
+2. Logical Structure
+3. model Structure
+4. architectural Structure
+Correct answer
+2. Logical Structure
+ 
+Q. 14. What is the equivalent Mongodb query for
+
+select * from emp where deptno = 30 order by deptno desc
+
+
+
+*
+1/1
+1. db.JavaTPoint.find( { deptno : 30 } ) : sort ( { deptno:-1 } )
+ 
+2. db.JavaTPoint.find( { deptno : 30 } ) : sort ( { deptno: 1 } )
+3. db.JavaTPoint.find( { deptno : 30 } ) : orderby ( { deptno:-1 } )
+4. an error statement
+ 
+Q. 53. How constraint be placed on a table where field will contain the value “Ram” if nothing is provided?
+
+
+
+*
+0/1
+1. CREATE TABLE People(FirstName TEXT CONSTRAINT “Ram”, address TEXT, city TEXT);
+2. CREATE TABLE People(FirstName TEXT DEFAULT“Ram”, address TEXT, city TEXT);
+3. CREATE TABLE People(FirstName TEXT DEFAULT(“Ram”), address TEXT, city TEXT);
+4. CREATE TABLE People(FirstName TEXT DEFAULT = “Ram”, address TEXT, city TEXT);
+ 
+Correct answer
+2. CREATE TABLE People(FirstName TEXT DEFAULT“Ram”, address TEXT, city TEXT);
+ 
+Q. 17. What can not be done on a view?
+
+
+
+*
+1/1
+1. display
+2. filter
+3. index
+ 
+4. drop
+ 
+Q. 51. For which of the following MySQL triggers are not supported ?
+
+
+
+*
+1/1
+1. delete
+2. update
+3. insert
+4. views
+ 
+ 
+46. A relational database consists of a collection of
+
+*
+1/1
+1. Tables
+ 
+2. Fields
+3. Records
+4. Keys
+ 
+Q. 25. Table EMP(EMP, ENAME, JOB, MANAGER, HIREDATE,SAL,COMM,DEPTNO)
+
+Which of the following update command will set job to ‘MANAGER for ‘SMITH’??
+
+
+
+*
+1/1
+1. update emp set job = ‘MANAGER’;
+2. update emp set job = ‘MANAGER’ where ename = SMITH;
+3. update emp set job = ‘MANAGER’ where ename = ‘SMITH’;
+ 
+4. none of the above
+ 
+Q. 13. The relationship between the two tables are created using_______
+
+
+
+*
+0/1
+1. Candidate key
+2. Primary key
+3. Foreign Key
+4. Check Constraint
+ 
+Correct answer
+3. Foreign Key
+ 
+Q. 30. The string function that returns the index of the first occurrence of substring is ___________
+
+
+
+*
+0/1
+1. INSERT()
+2. INSTR()
+3. INSTRING()
+ 
+4. INFSTR()
+Correct answer
+2. INSTR()
+ 
+Q. 58. A relation is said to be in _______ if, it is in 2NF and no transition dependency exists.
+
+
+
+*
+1/1
+1. BCNF
+2. 3NF
+ 
+3. 1NF
+4. 5NF
+ 
+Q. 2. Which index maintenance task discards the entire index and recreate it?
+
+
+
+*
+1/1
+1. Refresh
+2. Remake
+3. Reorganize
+4. Rebuild
+ 
+ 
+Q. 26. Which of the following query will display all cars whose price is equal to Miller’s car?
+
+
+
+*
+0/1
+1. select * from cartist where price = select price from cartist where name = ‘Miller’
+ 
+2. select * from cartist where price in select * from cartist where name = ‘Miller’
+3. select * from cartist where price in select price from cartist where name = ‘Miller’
+4. none of the above
+Correct answer
+3. select * from cartist where price in select price from cartist where name = ‘Miller’
+ 
+Q. 27. Which of the following function will remove collection in MongoDB?
+
+
+
+*
+0/1
+1. db.drop()
+ 
+2. db.dropCollection()
+3. db.remove()
+4. db.collection.drop()
+Correct answer
+2. db.dropCollection()
+ 
+Q. 9. To delete a particular column in a relation the command used is
+
+
+
+*
+0/1
+1. UPDATE
+2. DROP
+3. ALTER
+4. DELETE
+ 
+Correct answer
+3. ALTER
+ 
+Q. 24. Which procedure parameter enables the caller to pass in a value and get back a value?
+
+
+
+*
+1/1
+1. IN
+2. OUT
+3. INOUT
+ 
+4. GETINOUT
+ 
+Q. 43. Which type of join used, select  from emp e join dept d where e.dept = d.deptno;
+
+
+
+*
+0/1
+1. left outer join
+2. inner join
+3. outer join
+ 
+4. none
+Correct answer
+2. inner join
+ 
+Q. 12. Term document in MongoDB is equivalent to _______ in MySQL
+
+
+
+*
+0/1
+1. Row
+2. Table
+ 
+3. Attribute
+4. Greater Entity Count (GEC)
+Correct answer
+1. Row
+ 
+Q. 11. The correct  where clause to select a name starting with A and ending with  N
+
+
+
+*
+1/1
+1. Where name LIKE ‘A%’
+2. Where name LIKE ‘N%’
+3. Where name LIKE ‘A%%N’
+ 
+4. Where name LIKE ‘M%%N’
+ 
+Q. 5. What is complex view?
+
+
+
+*
+1/1
+1. A view that is created from only one table.
+2. A view that is created from more than one table
+ 
+3. A view that does not contain groups of data
+4. A view that is used to update data in the tables used to create the view.
+ 
+Q. 44. Which of the following operator is used to check greater than or equal to an MongoDB
+
+
+
+*
+1/1
+1. $gt
+2. $gte
+ 
+3. gte
+4. any of the above
+ 
+Q. 54. Which syntax followed by MySQL for stored routines?
+
+
+
+*
+0/1
+1. SQL: 2000
+2. SQL: 2003
+3. SQL: 2005
+ 
+4. SQL: 2008
+Correct answer
+1. SQL: 2000
+ 
+Q. 50. How many primary keys can we have in a MySQL table?
+
+
+
+*
+1/1
+1. only 1
+ 
+2. only 2
+3. Depends on no of Columns
+4. Depends on DBA
+ 
+Q. 31. Which of the following is an example of structured data
+
+
+
+*
+1/1
+1. CCTV generated data
+2. audio recording
+3. employee data
+ 
+4. none
+ 
+Q. 32. Which of the following MongoDB query is equivalent to the following SQL query?
+
+UPDATE users SET status = “C” WHERE age > 25
+
+
+
+*
+0/1
+1. db.users.update( { age: { $gt: 25 } } , { status “c” } )
+2. db.users.update( { age: { $gt: 25 } } , { $set : { status “c” } } )
+ 
+3. db.users.update( { age: { $gt: 25 } } , { $set : { status “c” } } , { multi: true } )
+4. db.users.update( { age: { $gt: 25 } } , { status “c” } , { multi: true } )
+Correct answer
+3. db.users.update( { age: { $gt: 25 } } , { $set : { status “c” } } , { multi: true } )
+ 
+Q. 20. A functional dependency is a relationship between or among
+
+
+
+*
+0/1
+1. Entities
+ 
+2. Rows
+3. Attribute
+4. Table
+Correct answer
+3. Attribute
+ 
+Q. 7. Consider the following statements
+
+I-DDL –Data Definition language: statements used to define the database structure or schema
+
+II- DML- Data Manipulation language- statements used for managing data within schema objects
+
+Which of the following is correct
+
+
+
+*
+0/1
+1. only I is true
+ 
+2. only II is true
+3. I and II both are true
+4. I and II both are false
+Correct answer
+3. I and II both are true
+ 
+Q. 8. Which of the following is comparison operator
+
+
+
+*
+0/1
+1. =
+2. LIKE
+ 
+3. BETWEEN
+4. All of the above
+Correct answer
+4. All of the above
+ 
+Q. 29. Which of the following is the correct order of a SQL statement?
+
+
+
+*
+0/1
+1. SELECT, GROUP BY, WHERE , HAVING
+ 
+2. SELECT, WHERE, GROUP BY, HAVING
+3. SELECT, HAVING, WHERE, GROUP BY
+4. SELECT, WHERE, HAVING, GROUP BY
+Correct answer
+2. SELECT, WHERE, GROUP BY, HAVING
+ 
+Q. 6. Consider the join of relation R with relation S . If R has m tuples and S has n tuples , then the maximum size of join is
+
+
+
+*
+0/1
+1. mn
+2. m+n
+3. (m+n)/2
+ 
+4. 2(m+n)
+Correct answer
+1. mn
+ 
+Q. 34. Supplier (sid:integer, sname:string,city:string,street:string)
+
+Parts(pid,integer,pname,string,color,string)
+
+Catalog(sid,integer,pid,integer,cost,real)
+
+Assume that in the suppliers relation above. Each supplier and each street within a city has a unique name and (sname , city) forms a candidate key no other no other functional dependencies are implied other than those implied by primary and candidate keys. Which one of the  following is TRUE about the above schema?
+
+
+
+*
+0/1
+1. The schema is in BCNF
+2. The schema is in 3NF but not in BCNF
+3. The schema is in 2NF but not in BCNF
+ 
+4. The schema is not in 2NF
+Correct answer
+2. The schema is in 3NF but not in BCNF
+ 
+Q. 37. How can we specifyies a row level trigger?
+
+
+
+*
+0/1
+1. Using ON ROW
+ 
+2. Using ON EACH COL
+3. Using ON EACH ROW
+4. Using ON COL
+Correct answer
+3. Using ON EACH ROW
+ 
+Q. 15. Which clause would you use in a select statement to limit the display to those employees whose salary is greater than 5000?
+
+
+
+*
+1/1
+1. order by salary > 5000
+2. group by salary > 5000
+3. having salary > 5000
+4. where salary > 5000
+ 
+ 
+Q. 4. Which of the following is wrong statement?
+
+
+
+*
+1/1
+1. WITH CHECK OPTION in view is applicable only for updatable views.
+2. Different views can be created on the same table for different users.
+3. A view can hide the complexity that exists in a multiple table join
+4. We cannot use WITH CHECK OPTION while creating a view.
+ 
+ 
+Q. 21. An Entity set may not have sufficient attribute to form a primary key such an entity set is termed as
+
+
+
+*
+1/1
+1. strong entity set
+2. weak entity set
+ 
+3. composite entity set
+4. Owner entity set
+This content is neither created nor endorsed by Google. - Contact form owner - Terms of Service - Privacy Policy
+Does this form look suspicious? Report
+
+Google Forms

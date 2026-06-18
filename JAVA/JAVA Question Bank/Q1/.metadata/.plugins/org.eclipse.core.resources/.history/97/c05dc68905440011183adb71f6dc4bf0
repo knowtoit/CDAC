@@ -1,0 +1,95 @@
+package com.demo.service;
+
+import java.util.Scanner;
+
+import com.demo.dao.VehicleDao;
+import com.demo.dao.VehicleDaoImpl;
+import com.demo.model.ElectricVehicle;
+import com.demo.model.PetrolVehicle;
+import com.demo.model.Vehicle;
+
+public class VehicleServiceImpl implements VehicleService {
+	private VehicleDao vdao;
+	
+	
+
+	public VehicleServiceImpl() {
+		super();
+		this.vdao = new VehicleDaoImpl();
+	}
+
+	@Override
+	public boolean addNewVehicle(int ch) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Add new Vehicle");
+		
+		System.out.println("Enter id");
+		int vid = sc.nextInt();
+		
+		System.out.println("Enter name");
+		String vname = sc.next();
+		
+		System.out.println("Enter price");
+		double price = sc.nextDouble();
+		
+		System.out.println("Enter status");
+		String status = sc.next();
+		
+		Vehicle v = null;
+		
+		if(ch==1) {
+			System.out.println("Enter battery capacity");
+			double batteryCapacity = sc.nextDouble();
+			
+			System.out.println("Enter charging time");
+			double chargingTime = sc.nextDouble();
+			
+			v = new ElectricVehicle(vid, vname, price, status, batteryCapacity, chargingTime);
+			
+		}
+		if(ch==2) {
+			System.out.println("Enter fuel type");
+			String fuelType = sc.next();
+			
+			System.out.println("Enter milaege");
+			double mileage = sc.nextDouble();
+			
+			v = new PetrolVehicle(vid,vname, price, status, fuelType, mileage);
+		}
+		
+		
+		
+		
+		return vdao.save(v);
+	}
+
+	@Override
+	public boolean deleteById(int id) {
+		// TODO Auto-generated method stub
+		
+		return vdao.removeById(id);
+	}
+
+	@Override
+	public boolean updatePriceById(int id, double newPrice) {
+		// TODO Auto-generated method stub
+		return vdao.modifyPriceById(id, newPrice);
+	}
+
+	@Override
+	public boolean sellVehicle(int id) {
+		// TODO Auto-generated method stub
+		return vdao.sellVehicleById(id);
+	}
+
+	
+
+	@Override
+	public boolean purchaseVehicle(int id) {
+		// TODO Auto-generated method stub
+		return vdao.purchaseVehicleById(id);
+	}
+
+
+}
