@@ -1,0 +1,14 @@
+E:\CDAC\MS.NET\CSharpDemos\02Demo\bin\Debug\net8.0\02Demo.exe
+E:\CDAC\MS.NET\CSharpDemos\02Demo\bin\Debug\net8.0\02Demo.deps.json
+E:\CDAC\MS.NET\CSharpDemos\02Demo\bin\Debug\net8.0\02Demo.runtimeconfig.json
+E:\CDAC\MS.NET\CSharpDemos\02Demo\bin\Debug\net8.0\02Demo.dll
+E:\CDAC\MS.NET\CSharpDemos\02Demo\bin\Debug\net8.0\02Demo.pdb
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.GeneratedMSBuildEditorConfig.editorconfig
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.AssemblyInfoInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.AssemblyInfo.cs
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.csproj.CoreCompileInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.dll
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\refint\02Demo.dll
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.pdb
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\02Demo.genruntimeconfig.cache
+E:\CDAC\MS.NET\CSharpDemos\02Demo\obj\Debug\net8.0\ref\02Demo.dll

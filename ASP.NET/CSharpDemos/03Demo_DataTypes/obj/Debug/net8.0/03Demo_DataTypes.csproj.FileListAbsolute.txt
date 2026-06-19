@@ -1,0 +1,14 @@
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.GeneratedMSBuildEditorConfig.editorconfig
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.AssemblyInfoInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.AssemblyInfo.cs
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.csproj.CoreCompileInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\bin\Debug\net8.0\03Demo_DataTypes.exe
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\bin\Debug\net8.0\03Demo_DataTypes.deps.json
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\bin\Debug\net8.0\03Demo_DataTypes.runtimeconfig.json
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\bin\Debug\net8.0\03Demo_DataTypes.dll
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\bin\Debug\net8.0\03Demo_DataTypes.pdb
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.dll
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\refint\03Demo_DataTypes.dll
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.pdb
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\03Demo_DataTypes.genruntimeconfig.cache
+E:\CDAC\MS.NET\CSharpDemos\03Demo_DataTypes\obj\Debug\net8.0\ref\03Demo_DataTypes.dll

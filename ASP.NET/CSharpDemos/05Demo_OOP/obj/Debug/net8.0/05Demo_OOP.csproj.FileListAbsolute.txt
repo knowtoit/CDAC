@@ -1,0 +1,14 @@
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\bin\Debug\net8.0\05Demo_OOP.exe
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\bin\Debug\net8.0\05Demo_OOP.deps.json
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\bin\Debug\net8.0\05Demo_OOP.runtimeconfig.json
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\bin\Debug\net8.0\05Demo_OOP.dll
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\bin\Debug\net8.0\05Demo_OOP.pdb
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.GeneratedMSBuildEditorConfig.editorconfig
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.AssemblyInfoInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.AssemblyInfo.cs
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.csproj.CoreCompileInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.dll
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\refint\05Demo_OOP.dll
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.pdb
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\05Demo_OOP.genruntimeconfig.cache
+E:\CDAC\MS.NET\CSharpDemos\05Demo_OOP\obj\Debug\net8.0\ref\05Demo_OOP.dll
