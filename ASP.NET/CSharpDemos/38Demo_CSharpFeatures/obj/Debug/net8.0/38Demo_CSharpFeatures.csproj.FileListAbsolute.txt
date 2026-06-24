@@ -1,0 +1,14 @@
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\bin\Debug\net8.0\38Demo_CSharpFeatures.exe
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\bin\Debug\net8.0\38Demo_CSharpFeatures.deps.json
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\bin\Debug\net8.0\38Demo_CSharpFeatures.runtimeconfig.json
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\bin\Debug\net8.0\38Demo_CSharpFeatures.dll
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\bin\Debug\net8.0\38Demo_CSharpFeatures.pdb
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.GeneratedMSBuildEditorConfig.editorconfig
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.AssemblyInfoInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.AssemblyInfo.cs
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.csproj.CoreCompileInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.dll
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\refint\38Demo_CSharpFeatures.dll
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.pdb
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\38Demo_CSharpFeatures.genruntimeconfig.cache
+E:\CDAC\MS.NET\CSharpDemos\38Demo_CSharpFeatures\obj\Debug\net8.0\ref\38Demo_CSharpFeatures.dll
