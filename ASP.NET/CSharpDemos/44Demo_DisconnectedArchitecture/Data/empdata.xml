@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Emp>
+    <Id>1</Id>
+    <Name>Hugh</Name>
+    <Address>NYC</Address>
+  </Emp>
+  <Emp>
+    <Id>2</Id>
+    <Name>Ron</Name>
+    <Address>LA</Address>
+  </Emp>
+  <Emp>
+    <Id>3</Id>
+    <Name>Tom</Name>
+    <Address>New Jersy</Address>
+  </Emp>
+  <Emp>
+    <Id>4</Id>
+    <Name>Tony Stark</Name>
+    <Address>Las Vegas</Address>
+  </Emp>
+  <Emp>
+    <Id>5</Id>
+    <Name>Rajesh Kuthrapalli</Name>
+    <Address>California</Address>
+  </Emp>
+</NewDataSet>

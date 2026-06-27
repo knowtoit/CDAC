@@ -1,0 +1,14 @@
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\bin\Debug\net8.0\41Demo_LINQ.exe
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\bin\Debug\net8.0\41Demo_LINQ.deps.json
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\bin\Debug\net8.0\41Demo_LINQ.runtimeconfig.json
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\bin\Debug\net8.0\41Demo_LINQ.dll
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\bin\Debug\net8.0\41Demo_LINQ.pdb
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.GeneratedMSBuildEditorConfig.editorconfig
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.AssemblyInfoInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.AssemblyInfo.cs
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.csproj.CoreCompileInputs.cache
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.dll
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\refint\41Demo_LINQ.dll
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.pdb
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\41Demo_LINQ.genruntimeconfig.cache
+E:\CDAC\MS.NET\CSharpDemos\41Demo_LINQ\obj\Debug\net8.0\ref\41Demo_LINQ.dll
